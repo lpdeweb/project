@@ -1,0 +1,37 @@
+.exclusive_b{
+	padding-top: 26px;
+	height: 96px;
+	position: relative;
+}
+.exclusive_b div{
+	height: 70px;
+	width: 236px;
+	position: absolute;
+	margin-top: 0;
+	padding-left: 400px;
+}
+.exclusive_b div h2{
+	font-size: 40px;
+	color: #d5d2bf;
+	padding-bottom: 10px;
+}
+.exclusive_b div span{
+	font-size: 20px;
+	color: #333;
+	margin-left: 90px;
+}
+.works_b{
+	height: 200px;
+	border: 1px solid #000;
+	padding: 6px;
+	background: #fff6d5;
+	margin-top: 10px;
+}
+.works_b p{
+	text-indent: 2em;
+	font-size: 14px;
+	color: #666;
+	margin: 40px auto;
+	line-height: 28px;
+	width: 740px;
+}

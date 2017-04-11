@@ -1,0 +1,7 @@
+[
+	{"img":"images/foot.jpg","cons":"1小时快修服务"},
+	{"img":"images/foot.jpg","cons":"1小时快修服务"},
+	{"img":"images/foot.jpg","cons":"1小时快修服务"},
+	{"img":"images/foot.jpg","cons":"1小时快修服务"},
+	{"img":"images/foot.jpg","cons":"1小时快修服务"}
+]

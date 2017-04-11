@@ -1,0 +1,5 @@
+[
+	{"img":"images/phone4.jpg","title":"红米3D月球系列...","price":"29元","price1":"39元","time":"上午十点 开始秒杀"},
+	{"img":"images/quite.jpg","title":"铁三角CLR100耳机","price":"118元","price1":"39元","time":"上午十点 开始秒杀"},
+	{"img":"images/car.jpg","title":"铁三角CLR100耳机","price":"118元","price1":"39元","time":"上午十点 开始秒杀"}
+]

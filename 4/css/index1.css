@@ -1,0 +1,365 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "020";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.page{
+}
+.about_head a img{
+  width: 92px;
+  height: 30px;
+  position: absolute;
+  left: 0;top:12px;
+}
+.about_head{
+  position: relative;
+}
+.wrapper{
+    width: 996px;
+    height: 54px;
+    margin: 0 auto;
+}
+.about_head .links a{
+  font-size: 14px;
+  line-height: 54px;
+  color: #444;
+  float: left;
+  padding:0 15px;
+}
+.about_head .links{
+  height: 30px;
+}
+.about_head .links .active{
+  color: #c90000;
+}
+#about_goodies .head{
+  height: 340px;
+  background: url(../images/about_banner.jpg) center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#about_goodies .head .wrapper{
+  position: relative;
+  width: 992px;
+}
+#about_goodies .head .mbp embed{
+  position: absolute;
+  left: 60px;top:18px;
+  width: 410px;
+  height: 260px;
+}
+#about_goodies .head .mbp{
+  background: url(../images/cont/about_tools_mac.jpg) 0 0 no-repeat;
+  position: absolute;
+  left: 0;top:34px;
+  width: 528px;
+  height: 306px;
+}
+#about_goodies .head .title1{
+  width: 257px;
+  height: 59px;
+  font-size: 42px;
+  color: #fff;
+  position: absolute;
+  left: 530px;
+  top: 100px;
+}
+#about_goodies .head .sub_title{
+  width: 415px;
+  height: 65px;
+  position: absolute;
+  left: 530px;
+  top: 160px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;  
+}
+.body .unite{
+  margin:30px 0 60px;
+  border-bottom: 1px solid #ededed;
+}
+.body .unite .unit .title2{
+    cursor: pointer;
+  height: 54px;
+  line-height: 54px;
+  padding-left: 30px;
+  color: #333;
+  font-size: 18px;
+  border-top: 1px solid #ededed;
+  position: relative;
+}
+.body .unite .unit.chrome .title2 i{
+  background: url(../images/cont/about_tools_icons.jpg) 0 -40px no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+/*.body .unite .unit.chrome .inner{*/
+    /*display: none;*/
+/*}*/
+/*.body .unite .unit.chrome:hover .inner{*/
+    /*display: block;*/
+/*}*/
+.body .unite .unit.firfox .title2 i{
+  background: url(../images/cont/about_tools_icons.jpg) 0 0 no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+.body .unite .unit.ie .title2 i{
+  background: url(../images/cont/about_tools_icons.jpg) 0 -80px no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+.body .unite .unit.others .title2 i{
+  background: url(../images/cont/about_tools_icons.jpg) 0 -120px no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+.body .unite .unit .title2 .arrow{
+  background: url(../images/cont/about_list.png) no-repeat;
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  display: block;
+}
+/*.chrome:active .chrome .inner{*/
+    /*-webkit-transform: scale(-1,-1);*/
+/*}*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #333;
+    bottom: 0;
+    left: 0;
+
+}
+.elevator-wrap {
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 10px;
+}
+#elevator,
+#plus {
+  width: 40px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  background: rgba(0,0,0,.6) url(../images/elevator_icon.png) no-repeat;
+  border-radius: 2px;
+}
+#elevator:hover,
+#plus:hover {
+  background-color: rgba(0,0,0,.7);
+}
+#elevator {
+  background-position: 8px 6px;
+  margin-bottom: 6px;
+}
+#plus {
+  background-position: 8px -34px;
+}
+#plus_popup {
+  display: none;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  padding: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  background-color: #fff;
+  border-radius: 2px;
+}
+#plus_popup:after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: 14px;
+  width: 6px;
+  height: 11px;
+  background: url(../images/plus_arrow.png) no-repeat;
+}
+#plus_popup a {
+  display: inline-block;
+  width: 142px;
+  height: 38px;
+  line-height: 38px;
+  color: #333;
+}
+#plus_popup a:hover {
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+#plus_popup i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 16px;
+  margin-right: 12px;
+  background: url(../images/plus_icons.svg) no-repeat;
+}
+#plus_popup i.icon-upload {
+  background-position: 0 -480px;
+}
+#plus_popup i.icon-board {
+  background-position: 0 -520px;
+}
+#plus_popup i.icon-tool {
+  background-position: 0 -80px;
+}
+.inner .software .install_area{
+    height: 184px;
+    background: #f7f7f7;
+    position: relative;
+}
+.chrome .inner .software .install_area .button{
+    position: absolute;
+    left: 345px;top: 40px;
+    width: 243px;
+    height: 60px;
+    background: #D53939;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+}
+.firfox .inner .software .install_area .button{
+    position: absolute;
+    left: 345px;top: 40px;
+    width: 243px;
+    height: 60px;
+    background: #D53939;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+}
+.ie .inner .software .install_area .button{
+    position: absolute;
+    left: 345px;top: 40px;
+    width: 243px;
+    height: 60px;
+    background: #fff;
+    padding: 0 30px;
+    font-size: 24px;
+    line-height: 60px;
+    border: 1px solid #ddd;
+}
+.others .inner .software .install_area .button{
+    position: absolute;
+    left: 345px;top: 40px;
+    width: 243px;
+    height: 60px;
+    background: #fff;
+    padding: 0 30px;
+    font-size: 24px;
+    line-height: 60px;
+    border: 1px solid #ddd;
+}
+.ie .inner embed{
+    width: 478px;
+    height: 320px;
+    vertical-align: middle;
+}
+.inner .software .install_area .sub{
+    font-size: 16px;
+    height: 22px;
+    float: left;
+    position: absolute;
+    left: 370px;
+    top: 110px;
+}
+.inner{
+    display: none;
+}
+.inner .software .install_area .sub a{
+    float: right;
+}
+.inner .software .install_area{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.inner .software h3{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F2F2F2;
+    font-size: 18px
+}
+.inner .software{
+    overflow: hidden;
+}
+.inner .software .left_part{
+    width: 400px;
+    float: left;
+}
+.inner .software .left_part h4{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.inner .software .right_part h4{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.inner .software .left_part p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.ie .inner .software .right_part p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.inner .software .right_part p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.inner .software .left_part,.right_part img{
+    margin-bottom: 25px;
+}
+.inner .software .right_part{
+    float: right;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

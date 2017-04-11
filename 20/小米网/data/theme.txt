@@ -1,0 +1,5 @@
+[
+	{"img":"images/phone5.jpg","title":"红米色彩主题后盖","parity":"1231人评价","price":"39元"},
+	{"img":"images/phone5.jpg","title":"红米色彩主题后盖","parity":"1231人评价","price":"39元"},
+	{"img":"images/phone5.jpg","title":"红米色彩主题后盖","parity":"1231人评价","price":"39元"}
+]

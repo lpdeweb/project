@@ -1,0 +1,21 @@
+.content{
+    background: #f3f4f5;
+}
+.six{
+    width: 1200px;
+}
+.six ul{
+    margin-left: -20px;
+}
+.six ul li{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.six ul li img{
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+.six ul li img:hover{
+    opacity: 0.5;
+}

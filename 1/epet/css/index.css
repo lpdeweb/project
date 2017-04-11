@@ -1,0 +1,243 @@
+
+.content-lunbo{
+    width: 770px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 228px;
+}
+.Banner1{
+    height: 360px;
+    z-index: 1;
+    overflow: hidden;
+}
+.Banner1 ul li {
+    position: absolute;
+}
+/*.Banner1 ul li img{*/
+    /*transition: transform 4s linear 0s;*/
+    /*transform: scale(0);*/
+    /*-webkit-animation:img 10s linear infinite 1s;*/
+    /*-webkit-animation-delay: 10s*/
+/*}   缩放效果*/
+.Banner1 .tp{
+    display: block;
+    width: 1200px;
+    height: 380px;
+    margin: auto;
+    position: relative;
+}
+.Banner1 .tp img{
+    position: relative;
+    /*left: -275px;*/
+}
+.btn{
+    width: 100%;
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    z-index: 4;
+}
+.btn ul{
+    display: inline-block;
+}
+.btn ul li{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: #B9B8BB;
+    border-radius:50%;
+    margin: 0 5px;
+}
+.btn .cur{
+    background: #D33340;
+}
+.content .content-right{
+
+}
+.content .content-right ul li{
+    margin-left: 6px;
+    transition: all 0.4s ease-out 0s;
+}
+.content .content-right ul li:hover{
+    margin-left: -6px;
+}
+
+
+
+
+
+
+.new{
+    margin-top: 30px;
+}
+.new ul li h4{
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: #333333;
+}
+.new ul li{
+    width: 290px;
+}
+.new ul li p{
+    font-size: 11px;
+    color: #999999;
+    margin-left: 30px;
+}
+.new ul li span{
+    margin-left: 30px;
+    font-size: 11px;
+    color: #ff0000;
+
+}
+.new ul li .p1{
+    margin-top: 11px;
+    margin-bottom: 16px;
+}
+.new ul li .p2{
+    margin-top: 33px;
+}
+.new ul li .p3{
+    margin-top: 10px;
+}
+.new ul .new-right li img{
+    margin-top: 6px;
+    transition: all 0.4s ease-out 0s;
+}
+.new ul .new-right li img:hover{
+    margin-top: -6px;
+}
+
+
+.food .food-title span{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+.food-body{
+    margin-top: 12px;
+}
+.food-body .food-right .food-right-i{
+    margin-left: 424px;
+}
+.food-body .food-right .food-right-i input{
+    text-align: center;
+
+}
+.food-body .food-right .food-right-i input:hover{
+    border: 1px solid #e74085;
+    color: #e74085;
+}
+.on{
+    border: 1px solid #e74085;
+    color: #e74085;
+}
+.remen .remen-top .remen1{
+    position: absolute;
+}
+
+.remen .remen-top .remen2{
+    position: absolute;
+    left: -300px;
+}
+.remen .remen-top .remen3{
+    margin-top: 5px;
+    position: absolute;
+}
+.remen .p1{
+    font-size: 14px;
+    color: #000000;
+}
+.remen .p2{
+    font-size: 12px;
+    color: #ff4400;
+}
+.remen .remen-top .remen-top-p1{
+    position: relative;
+    left: 30px;
+    top: 35px;
+    z-index: 20;
+}
+.remen .remen-top .remen-top-p2{
+    position: relative;
+    left: 30px;
+    top: 45px;
+    z-index: 20;
+}
+.remen .remen-top .remen-top-p12{
+    position: relative;
+    left: 80px;
+    top: -110px;
+    z-index: 20;
+}
+.remen .remen-top .remen-top-p22{
+    position: relative;
+    left: 80px;
+    top: -100px;
+    z-index: 20;
+}
+.remen .remen-bottom .remen-top-p13{
+    position: relative;
+    left: 20px;
+    top: -120px;
+    z-index: 20;
+}
+.remen .remen-bottom .remen-top-p23{
+    position: relative;
+    left: 20px;
+    top: -110px;
+    z-index: 20;
+}
+.food-right{
+    margin-left: -6px;
+}
+.jinkou{
+
+}
+.jinkou ul{
+    margin-left: 6px;
+    width: 860px;
+}
+.jinkou ul li{
+    width: 210px;
+    height: 218px;
+    border: 1px solid #ededed;
+}
+.jinkou ul li img{
+    margin-left: 50px;
+    margin-top: 20px;
+    position: absolute;
+}
+.jinkou ul li .p1{
+    font-size: 12px;
+    color: #666666;
+    /*margin-top: 10px;*/
+    margin-left: 40px;
+    position: relative;
+    top:150px;
+}
+.jinkou ul li .p2{
+    font-size: 16px;
+    color: #dd2727;
+    margin-left: 35px;
+    position: relative;
+    top:160px;
+    /*margin-top: 10px;*/
+}
+.jinkou .sy{
+    margin-top: 4px;
+    transition: all 0.4s ease-out 0s;
+}
+.jinkou .sy:hover{
+    margin-top: -4px;
+}
+.remen,.jinkou{
+    display: none;
+}
+
+
+
+

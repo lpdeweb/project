@@ -1,0 +1,712 @@
+<!doctype html>
+<html ng-app="modl">
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+<script src="js/angular.js"></script>
+<script src="js/jquery-1.7.2.js"></script>
+</head>
+<body>
+	<header>
+    	<div class="head wraper clearFix" ng-controller="nav">
+        	<div class="head-l fl">
+            	<ul class="clearFix">
+                	<li ng-repeat="item in type"><a class="special" href="#">{{item}}</a></li>
+                	<!-- <li><a href="#">MIUI</a></li>
+                	<li><a href="#">米聊</a></li>
+                	<li><a href="#">游戏</a></li>
+                	<li><a href="#">多看阅读</a></li>
+                	<li><a href="#">云服务</a></li>
+                	<li><a href="#">小米网移动版</a></li>
+                	<li><a href="#">Select Region</a></li> -->
+                </ul>
+            </div>
+            <div class="head-r fr">
+            	<ul class="clearFix">
+                	<li><a class="special" href="#">登录</a></li>
+                	<li><a class="special1" href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="logo wraper clearFix">
+    	<div class="logo-l fl">
+        	<a href="#"><img src="images/logo.jpg" alt="" /></a>
+        </div>
+        <div class="logo-r fr">
+        	<div class="logo-r-top"><a href="#">11月18日预约开放购买</a></div>
+            <div class="logo-r-bottom clearFix">
+            	<div class="bottom1 fl">
+                	<input type="text" placeholder="搜索您想要的商品" />
+               		<a href="#"></a>
+                </div>
+                <div class="bottom2 fr">
+                	<a href="#">购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav wraper clearFix">
+    	<div class="nav-l fl">
+        	<div class="nav-l-t">
+            	<a href="#">全部商品分类</a>
+            </div>
+            <div class="nav-l-b" ng-controller="store">
+            	<ul>
+                	<li ng-repeat="mi in kinds">
+                    	<h2>{{mi.title}}</h2>
+                        <div class="kind clearFix">
+                        	<div>{{mi.mia}}</div>
+                        	<div>{{mi.mib}}</div>
+                        	<div>{{mi.red}}</div>
+                        	<div>{{mi.note}}</div>
+                        </div>
+                    </li>
+                	<!-- <li>
+                    	<h2>购买电视与平板</h2>
+                        <div class="kind clearFix">
+                        	<div>小米电视</div>
+                        	<div>小米盒子</div>
+                        	<div>小米平板</div>
+                        </div>
+                    </li>
+                	<li>
+                    	<h2>后盖与个性化配件</h2>
+                        <div class="kind clearFix">
+                        	<div>米键</div>
+                        	<div>后盖</div>
+                        	<div>贴纸</div>
+                        	<div>手机支架</div>
+                        </div>
+                    </li>
+                	<li>
+                    	<h2>保护套与贴膜</h2>
+                        <div class="kind clearFix">
+                        	<div>保护套/保护壳</div>
+                        	<div>贴膜</div>
+                        	<div>防尘塞</div>
+                        </div>
+                    </li>
+                	<li>
+                    	<h2>移动电源与电池</h2>
+                        <div class="kind clearFix">
+                        	<div>小米移动电源</div>
+                        	<div>电池</div>
+                        	<div>充电器</div>
+                        </div>
+                    </li>
+                	<li>
+                    	<h2>路由器与智能家庭</h2>
+                        <div class="kind clearFix">
+                        	<div>小米路由器</div>
+                        	<div>随身WIFI</div>
+                        	<div>智能家庭</div>
+                       	</div>
+                    </li>
+                	<li>
+                    	<h2>购买手机</h2>
+                        <div class="kind clearFix">
+                        	<div>小米活塞耳机</div>
+                        	<div>更多耳机</div>
+                        	<div>音箱</div>
+                        </div>
+                    </li>
+                	<li class="no-border">
+                    	<h2>小米生活方式</h2>
+                        <div class="kind clearFix">
+                        	<div>小米手环</div>
+                        	<div>服装</div>
+                        	<div>血压计</div>
+                        	<div>米兔</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="nav-r fr">
+        	<div class="nav-r-t">
+            	<ul class="clearFix" ng-controller="pages">
+                	<li ng-repeat="each in arr">{{each}}</li>
+                	<!-- <li>小米手机</li>
+                	<li>红米</li>
+                	<li>小米平板</li>
+                	<li>小米电视</li>
+                	<li>盒子</li>
+                	<li>路由器</li>
+                	<li>合约机</li>
+                	<li>服务</li>
+                	<li>社区</li> -->
+                </ul>
+            </div>
+            <div class="nav-r-c">
+            	<a href="#"><img src="images/mi.jpg" alt="" /></a>
+            </div>
+            <div class="nav-r-b">
+            	<ul class="clearFix" ng-controller="news">
+                	<li ng-repeat="con in information">
+                    	<h3>红米4G手机 现货购买</h3>
+                        <p>可选红米1S、红米Note</p>
+                    </li>
+                	<!-- <li>
+                    	<h3>小米3 特价1499</h3>
+                        <p>直降200，免预约购买</p>
+                    </li>
+                	<li>
+                    	<h3>小米电视2 单售3399元</h3>
+                        <p>顶配49英寸4K电视，降价比之王</p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="star wraper clearFix">
+    	<div class="star-l fl">
+        	<h3>小米明星单品<span>根据机型选配件</span></h3>
+        </div>
+        <div class="star-r fr">
+        	<ul class="clearFix">
+            	<li class="small"></li>
+            	<li class="small1"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="kinds wraper">
+    	<ul class="clearFix" ng-controller="introduce">
+        	<li ng-repeat="every in power">
+            	<h3>{{every.header}}</h3>
+                <p>{{every.text}} </p>
+            </li>
+        	<!-- <li>
+            	<h3>1040mAh小米移动电源</h3>
+                <p>全铝合金金属外壳, LG/三星等优质电芯 </p>
+            </li>
+        	<li>
+            	<h3>1040mAh小米移动电源</h3>
+                <p>全铝合金金属外壳, LG/三星等优质电芯 </p>
+            </li> -->
+        </ul>
+    </div>
+   	<div class="new wraper clearFix">
+    	<h3 class="fl">新品上架</h3>
+       	<p class="fr">更多&gt;</p>
+    </div>
+    <div class="product wraper clearFix">
+    	<div class="product-l fl">
+        	<div class="product-l-top">
+            	<a href="#"><img src="images/a2.jpg" alt="" /></a>
+                <div class="font">
+                	<h2>iHeaIth智能血压计</h2>
+                	<p class="font-1">父母在家一点就测 测量结果云端同步</p>
+                	<p class="font-2">199元</p>
+                </div>
+            </div>
+            <div class="product-l-c clearFix">
+            	<div class="product-l-c1 fl">
+                	<a href="#"><img src="images/close.jpg" alt="" /></a>
+                    <div class="font1">
+                    	<h2>大人物米兔圆领套头卫衣</h2>
+                        <p>99元<span>129元</span></p>
+                    </div>
+                </div>
+                <div class="product-l-c2 fr">
+                	<ul>
+                    	<li>
+                        	<a href="#"><img src="images/erji.jpg" alt="" /></a>
+                            <div class="font2">
+                            	<h2>QCY运动蓝牙耳机</h2>
+                                <p>129元</p>
+                            </div>
+                        </li>
+                    	<li>
+                        	<a href="#"><img src="images/creame.jpg" alt="" /></a>
+                            <div class="font2">
+                            	<h2>QCY运动蓝牙耳机</h2>
+                                <p>129元</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-l-b">
+            	<ul class="clearFix" ng-controller="headset">
+                	<li ng-repeat="price in shop">
+                    	<a href="#"><img ng-src="{{price.img}}" alt="" /></a>
+                        <div class="font3">
+                            <h2>{{price.title}}</h2>
+                            <p>{{price.mach}}</p>
+                        </div>
+                    </li>
+                    <!-- <li>
+                    	<a href="#"><img src="images/phone1.jpg" alt="" /></a>
+                        <div class="font3">
+                            <h2>铁三角CLR100耳机</h2>
+                            <p>118元</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="product-r fr">
+        	<div class="product-r-t" ng-controller="special">
+            	<ul>
+                	<li ng-repeat="com in moon">
+                		<a href="#"><img ng-src="{{com.img}}" alt="" /></a>
+                        <div class="font4">
+                        	<h2>{{com.title}}</h2>
+                            <p class="font4-1">{{com.price}}<span>{{com.price1}}</span></p>
+                            <p class="font4-2">{{time}}</p>
+                        </div>
+                	</li>
+                    <!-- <li>
+                		<a href="#"><img src="images/quite.jpg" alt="" /></a>
+                        <div class="font4">
+                        	<h2>红米3D月球系列...</h2>
+                            <p class="font4-1">29元<span>39元</span></p>
+                            <p class="font4-2">上午十点 开始秒杀</p>
+                        </div>
+                	</li>
+                    <li>
+                		<a href="#"><img src="images/car.jpg" alt="" /></a>
+                        <div class="font4">
+                        	<h2>红米3D月球系列...</h2>
+                            <p class="font4-1">29元<span>39元</span></p>
+                            <p class="font4-2">上午十点 开始秒杀</p>
+                        </div>
+                	</li> -->
+                </ul>
+            </div>
+            <div class="product-r-c">
+            	<h2>话费充值</h2>
+                <input type="text" placeholder="请输入手机号" />
+                <select>
+                	<option>100元</option>
+                </select>
+                <p>实付价格：98.4元起</p>
+                <input class="user" type="button" value="立即充值" />
+            </div>
+            <div class="product-r-b">
+            	<h2>新闻公告</h2>
+                <ul ng-controller="lism">
+                	<li ng-repeat="number in user"><p>{{number}}</p></li>
+                	<!-- <li><p>企业用户采购通道</p></li>
+                	<li><p>企业用户采购通道</p></li>
+                	<li class="no-b"><p>企业用户采购通道</p></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="like wraper">
+    	<p>大家都喜欢</p>
+    </div>
+    <div class="sell wraper clearFix">
+    	<div class="sell-l fl">
+        	<div class="sell-l-t">
+            	<a href="#"><img src="images/boy.jpg" alt="" /></a>
+                <div class="font5">
+                	<h2>小米T恤换季特卖</h2>
+                    <p>舒适纯棉面料 多色经典团案</p>
+                    <span>全场29元</span>
+                </div>
+            </div>
+            <div class="sell-l-b" ng-controller="erji">
+            	<ul class="clearFix">
+                	<li ng-repeat="num in act">
+                    	<a href="#"><img ng-src="{{num.img}}" alt="" /></a>
+                        <div class="font6">
+                        	<p>{{num.cont}}</p>
+                            <span>{{num.price}}</span>
+                        </div>
+                    </li>
+                    <!-- <li>
+                    	<a href="#"><img src="images/a3.jpg" alt="" /></a>
+                        <div class="font6">
+                        	<p>先锋SE-MJ512折叠式头戴耳机</p>
+                            <span>168元</span>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="sell-r fr">
+        	<ul ng-controller="hot" >
+            	<li class="special2">
+                	<p><span>HOT</span>热销商品排行</p>
+                </li>
+                <li ng-repeat="move in electric">
+                	<a href="#"><img ng-src="{{move.img}}" alt="" /></a>
+                    <h2>{{move.title}}</h2>
+                    <div class="font7">
+                    	<p>{{move.contr}}</p>
+                        <span>{{move.price}}</span>
+                    </div>
+                </li>
+               <!--  <li>
+                	<a href="#"><img src="images/aa.jpg" alt="" /></a>
+                    <h2>2</h2>
+                    <div class="font7">
+                    	<p>5200mAh移动电源</p>
+                        <span>49元</span>
+                    </div>
+                </li>
+                <li>
+                	<a href="#"><img src="images/aa.jpg" alt="" /></a>
+                    <h2>3</h2>
+                    <div class="font7">
+                    	<p>5200mAh移动电源</p>
+                        <span>49元</span>
+                    </div>
+                </li>
+                <li>
+                	<a href="#"><img src="images/aa.jpg" alt="" /></a>
+                    <h2>4</h2>
+                    <div class="font7">
+                    	<p>5200mAh移动电源</p>
+                        <span>49元</span>
+                    </div>
+                </li>
+                <li>
+                	<a href="#"><img src="images/aa.jpg" alt="" /></a>
+                    <h2>5</h2>
+                    <div class="font7">
+                    	<p>5200mAh移动电源</p>
+                        <span>49元</span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="like wraper">
+    	<p>热评产品</p>
+    </div>
+    <div class="evaluate wraper">
+    	<ul class="clearFix" ng-controller="theme">
+        	<li ng-repeat="one in col">
+            	<a href="#"><img ng-src="{{one.img}}" alt="" /></a>
+                <div class="font8">
+                	<h2>{{one.title}}</h2>
+                    <p><span>{{one.parity}}</span></p>
+                    <h2>{{one.price}}</h2>
+                </div>
+            </li>
+            <!-- <li>
+            	<a href="#"><img src="images/phone5.jpg" alt="" /></a>
+                <div class="font8">
+                	<h2>红米色彩主题后盖</h2>
+                    <p><span>1231人评价</span></p>
+                    <h2>39元</h2>
+                </div>
+            </li>
+            <li>
+            	<a href="#"><img src="images/phone5.jpg" alt="" /></a>
+                <div class="font8">
+                	<h2>红米色彩主题后盖</h2>
+                    <p><span>1231人评价</span></p>
+                    <h2>39元</h2>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="like wraper">
+    	<p>特价产品</p>
+    </div>
+    <div class="barprice wraper">
+    	<ul class="clearFix" ng-controller="offer">
+        	<li ng-repeat="every in storage">
+            	<a href="#"><img ng-src="{{every.img}}" alt="" /></a>
+                <div class="font9">
+                	<h2>{{every.title}}</h2>
+                    <p>{{every.math}}<span>{{every.price}}</span></p>
+                </div>
+                <img class="photo" ng-src="{{every.image}}" alt="" />
+            </li>
+            <!-- <li>
+            	<a href="#"><img src="images/ke.jpg" alt="" /></a>
+                <div class="font9">
+                	<h2>SanDisk 32GB储存卡</h2>
+                    <p>89元<span>100元</span></p>
+                </div>
+                <img class="photo" src="images/price.jpg" alt="" />
+            </li>
+            <li>
+            	<a href="#"><img src="images/ke.jpg" alt="" /></a>
+                <div class="font9">
+                	<h2>SanDisk 32GB储存卡</h2>
+                    <p>89元<span>100元</span></p>
+                </div>
+                <img class="photo" src="images/price.jpg" alt="" />
+            </li> -->
+        </ul>
+    </div>
+    <div class="like wraper">
+    	<p>多看图书</p>
+    </div>
+    <div class="book wraper">
+    	<ul class="clearFix" ng-controller="book">
+        	<li ng-repeat="note in design">
+            	<a href="#"><img ng-src="{{note.img}}" alt="" /></a>
+                <div class="test">
+                	<p>{{note.name}}</p>
+                    <p>{{note.person}}</p>
+                    <p>{{note.price}}</p>
+                </div>
+                <div class="test1">
+                	<p>{{note.str}}</p>
+                </div>
+            </li>
+            <!-- <li>
+            	<a href="#"><img src="images/big.jpg" alt="" /></a>
+                <div class="test">
+                	<p>《参与感：小米口碑营销内部手册》</p>
+                    <p>黎万强（小米联合创始人）</p>
+                    <p>9.99元</p>
+                </div>
+                <div class="test1">
+                	<p>后盖头图案非常好看，不愧是官方出品，和机型严丝合缝很赞！</p>
+                </div>
+            </li>
+            <li>
+            	<a href="#"><img src="images/big.jpg" alt="" /></a>
+                <div class="test">
+                	<p>《参与感：小米口碑营销内部手册》</p>
+                    <p>黎万强（小米联合创始人）</p>
+                    <p>9.99元</p>
+                </div>
+                <div class="test1">
+                	<p>后盖头图案非常好看，不愧是官方出品，和机型严丝合缝很赞！</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="book1 wraper">
+    	<ul class="clearFix" ng-controller="festival">
+        	<li ng-repeat="bach in fonter">
+            	<p>{{bach.cons}}</p>
+                <p>{{bach.price}}</p>
+                <a href="#"><img ng-src="{{bach.img}}" alt="" /></a>
+            </li>
+            <!-- <li>
+            	<p>光棍节想脱单吗？告白字体0元起</p>
+                <p>6米币</p>
+                <a href="#"><img src="images/a4.jpg" alt="" /></a>
+            </li>
+            <li>
+            	<p>光棍节想脱单吗？告白字体0元起</p>
+                <p>6米币</p>
+                <a href="#"><img src="images/a4.jpg" alt="" /></a>
+            </li> -->
+        </ul>
+    </div>
+    <div class="foot">
+    	<div class="font1 wraper">
+        	<ul class="clearFix" ng-controller="repair">
+            	<li ng-repeat="hours in service">
+                	<img ng-src="{{hours.img}}" alt="" />
+                    <p>{{hours.cons}}</p>
+                </li>
+                <!-- <li>
+                	<img src="images/foot.jpg" alt="" />
+                    <p>1小时快修服务</p>
+                </li>
+                <li>
+                	<img src="images/foot.jpg" alt="" />
+                    <p>1小时快修服务</p>
+                </li>
+                <li>
+                	<img src="images/foot.jpg" alt="" />
+                    <p>1小时快修服务</p>
+                </li>
+                <li>
+                	<img src="images/foot.jpg" alt="" />
+                    <p>1小时快修服务</p>
+                </li> -->
+            </ul>
+        </div>
+        <div class="foot2 wraper">
+        	<ul class="clearFix" ng-controller="help">
+            	<li ng-repeat="mode in box">
+                	<h2>{{mode.title}}</h2>
+                    <p>{{mode.cons}}</p>
+                    <p>{{mode.con1}}</p>
+                    <p>{{mode.con2}}</p>
+                </li>
+                <!-- <li>
+                	<h2>帮助中心</h2>
+                    <p>购物指南</p>
+                    <p>支付方式</p>
+                    <p>配送方式</p>
+                </li>
+                <li>
+                	<h2>帮助中心</h2>
+                    <p>购物指南</p>
+                    <p>支付方式</p>
+                    <p>配送方式</p>
+                </li>
+                <li>
+                	<h2>帮助中心</h2>
+                    <p>购物指南</p>
+                    <p>支付方式</p>
+                    <p>配送方式</p>
+                </li>
+                <li>
+                	<h2>帮助中心</h2>
+                    <p>购物指南</p>
+                    <p>支付方式</p>
+                    <p>配送方式</p>
+                </li> -->
+                <li class="special3">
+                	<h2>400-100-5678</h2>
+                    <p>周一至周日8：00-18：00</p>
+                    <span>(仅收市话)</span>
+                    <b>24小时在线客服</b>
+                </li>
+            </ul>
+        </div>
+        <div class="foot3 wraper clearFix">
+        	<div class="foot3-l fl">
+            	<p>小米旗下网站：小米网|MIUI|米聊|多看书城|小米路由器|小米后院|小米天猫店|小米淘宝直营店|小米网盟|问题反馈|Select Region</p>
+                <p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号</p>
+                <img src="images/foot1.jpg" alt="" />
+            </div>
+            <div class="foot3-r fr">
+            	<select>
+                	<option>简体中文</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let app=angular.module('modl',[]);
+        app.controller('nav',($scope,$http)=>{
+            $http.get('data/nav.txt').then((r)=>{
+                console.log(r);
+                $scope.type=r.data;
+            },(r)=>{
+                alert('出错了');
+            })
+        });
+        app.controller('store',($scope,$http)=>{
+            $http.get('data/store.txt').then((r)=>{
+                //console.log(r);
+                $scope.kinds=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('pages',($scope,$http)=>{
+            $http.get('data/pages.txt').then((r)=>{
+                console.log(r);
+                $scope.arr=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('news',($scope,$http)=>{
+            $http.get('data/information.txt').then((r)=>{
+                console.log(r);
+                $scope.information=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('introduce',($scope,$http)=>{
+            $http.get('data/introduce.txt').then((r)=>{
+                console.log(r);
+                $scope.power=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('headset',($scope,$http)=>{
+            $http.get('data/headset.txt').then((r)=>{
+                console.log(r);
+                $scope.shop=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('special',($scope,$http)=>{
+            $http.get('data/special.txt').then((r)=>{
+                console.log(r);
+                $scope.moon=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('lism',($scope,$http)=>{
+            $http.get('data/lism.txt').then((r)=>{
+                console.log(r);
+                $scope.user=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('erji',($scope,$http)=>{
+            $http.get('data/erji.txt').then((r)=>{
+                console.log(r);
+                $scope.act=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('hot',($scope,$http)=>{
+            $http.get('data/hot.txt').then((r)=>{
+                console.log(r);
+                $scope.electric=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('theme',($scope,$http)=>{
+            $http.get('data/theme.txt').then((r)=>{
+                console.log(r);
+                $scope.col=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('offer',($scope,$http)=>{
+            $http.get('data/offer.txt').then((r)=>{
+                console.log(r);
+                $scope.storage=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('book',($scope,$http)=>{
+            $http.get('data/book.txt').then((r)=>{
+                console.log(r);
+                $scope.design=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('festival',($scope,$http)=>{
+            $http.get('data/festival.txt').then((r)=>{
+                console.log(r);
+                $scope.fonter=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('repair',($scope,$http)=>{
+            $http.get('data/repair.txt').then((r)=>{
+                console.log(r);
+                $scope.service=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+        app.controller('help',($scope,$http)=>{
+            $http.get('data/help.txt').then((r)=>{
+                console.log(r);
+                $scope.box=r.data;
+            },(r)=>{
+                alert('出错了'+r);
+            })
+        });
+</script>
+</html>

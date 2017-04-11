@@ -1,0 +1,73 @@
+.family_b{
+	padding-top: 26px;
+	margin-bottom: 20px;
+}
+.family_b h2{
+	text-align: center;
+	font-size: 30px;
+	color: rgb(231, 13, 79);
+	padding-bottom: 16px;
+}
+.family_b span{
+	display: block;
+	font-size: 18px;
+	color: #333;
+	text-align: center;
+	line-height: 22px;
+}
+
+
+.rim_b{
+	padding-top: 26px;
+	margin-bottom: 20px;
+}
+.rim_b h2{
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	padding-bottom: 16px;
+}
+
+
+.environment_b ul{
+	overflow: hidden;
+	width: 1036px;
+	margin-bottom: 8px;
+}
+.environment_b ul li{
+	float: left;
+	width: 250px;
+	margin-right: 8px;
+	overflow: hidden;
+	position: relative;
+}
+.environment_b ul li img{
+	width: 250px;
+}
+.environment_b ul li a{
+	transform-style: preserve-3d;
+}
+.environment_b ul li a img{
+	transition: .7s all ease-in;
+}
+.environment_b ul li a img:hover{
+	transform: perspective(800px) rotateZ(-5deg) scale(1.1,1.1);
+}
+.environment_b ul li .font{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	background: rgba(231,13,79,0.8);
+	transition: .7s all ease;
+}
+.environment_b ul li .font h4{
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	font-weight: normal;
+}
+.environment_b ul li:hover .font{
+	transform: translateY(-30px);
+}

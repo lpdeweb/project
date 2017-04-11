@@ -1,0 +1,39 @@
+
+.logo{
+    width: 50px;
+    height: 20px;
+    padding-left: 40px;
+    margin: 40px 0;
+}
+#header{
+    width: 800px;
+    height:50px;
+    background: #333333;
+    font-size: 14px;
+    margin-right: 126px;
+    margin-bottom: 40px;
+}
+#nav{
+    width: 800px;
+    height: 80px;
+    padding:0 50px;
+    /*margin:50px auto;*/
+    box-sizing:border-box;
+    position: relative;
+}
+#headernav li{
+    float: left;
+    line-height: 50px;
+}
+#headernav li a{
+    color: #fff;
+    padding: 0 20px;
+    margin:0 22px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    cursor: pointer;
+
+}
+#headernav li a:hover{
+    color: #747474;
+}

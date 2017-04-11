@@ -1,0 +1,385 @@
+
+/*banner-top*/
+.banner{
+    width: 1349px;
+    height: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+.list{
+    width: 8000px;
+    height: 802px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:0.5s all ease;
+}
+.list li{
+    float: left;
+    width: 1920px;
+    height: 805px;
+}
+.back{
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.point{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+.point li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #000;
+    margin-left: 20px;
+}
+.point .active{
+    background-color: #01ffff;
+}
+
+/*banner-end*/
+
+/*about-content-top*/
+.about-content{
+    width: 1349px;
+    height:800px;
+    background: url(../images/about-bg.jpg)no-repeat 50% 50%;
+    padding-top: 115px;
+    position: relative;
+}
+.about-content h2{
+    font-size: 30px;
+    font-weight: normal;
+    color: #000;
+    margin-left: 615px;
+    margin-top: 100px;
+}
+.about-content .red-line{
+    width: 53px;
+    height: 3px;
+    margin-left: 615px;
+    /*margin-top: 14px;*/
+    margin-bottom: 30px;
+    background: url(../images/redline.png) no-repeat;
+}
+.about-content p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+    margin-left: 610px;
+    margin-bottom: 20px;
+
+}
+.about-content article{
+    font-size: 12px;
+    color: #2b2b2b;
+    line-height: 20px;
+    margin-left: 610px;
+}
+.about-content .about-bottom span a{
+    display: block;
+    width: 97px;
+    height: 38px;
+    background: #000;
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 800px;
+    top: 580px;
+}
+/*.about-content-end*/
+/*.product-display-top*/
+.product-display{
+    width: 1349px;
+    height: 940px;
+    background: url(../images/product.jpg) no-repeat 50% 50%;
+    text-align: center;
+}
+.product-display .product-text{
+    padding-top: 120px;
+}
+.product-display .product-text h2{
+    font-size: 30px;
+    color: #000;
+    font-weight: normal;
+}
+.product-display .product-text .redLine{
+    width: 53px;
+    height: 3px;
+    background: url("../images/redline.png");
+    margin-left: 649px;
+    margin-top: 13px;}
+.product-display .product-text article{
+    font-size: 12px;
+    color: #6b6b6b;
+    margin-top: 63px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+.product-display #product-lb{
+    width: 1200px;
+    height: 800px;
+}
+.product-display #product-lb .tab li:nth-child(1){
+    width: 112px;
+    height: 36px;
+    background: #f0f0f0;
+}
+.product-display #product-lb .tab li:nth-child(1) a{
+    font-size: 14px;
+}
+.product-display #product-lb .tab li{
+    width: 112px;
+    height: 36px;
+    background: #f0f0f0;
+    float: left;
+    margin-left: 106px;
+    border-radius: 20px;
+    line-height: 36px;
+    text-align: center;
+
+}
+.product-display #product-lb .tab li a{
+    font-size: 13px;
+    color: #666;
+}
+.product-display #product-lb .tab .black a{
+    width: 112px;
+    height: 36px;
+    display: block;
+    background:#2b2b2b;
+    font-size: 15px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.product-display #tab-picture{
+    padding-left: 178px;
+    margin-top: 10px;
+}
+.product-display #tab-picture ul li{
+    margin: 10px 5px 0;
+    width: 319px;
+    overflow: hidden;
+    height: 229px;
+}
+.product-display #tab-picture img{
+    transition: 0.5s all ease;
+}
+.product-display #tab-picture img:hover{
+    margin-left: -10px;
+    transition: 0.5s all ease;
+}
+.product-display #tab-picture ul li{
+float: left;
+}
+.product-display #tab-picture ul{
+    display: none;
+}
+/*product-display-end*/
+/*product-well-top*/
+.product-well{
+    margin-top: 30px;
+    width: 1349px;
+    height: 918px;
+    background: url(../images/well-bg.jpg) no-repeat 50% 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+.product-well .product-well-text h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+}
+.product-well .product-well-text .whiteLine{
+    width: 54px;
+    height: 3px;
+    background: url(../images/whiteLine.png);
+    margin-left: 648px;
+    margin-top: 10px;
+}
+.product-well .product-well-text p{
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+}
+.product-well .fb{
+    margin-left:70px;
+    margin-top: 200px;
+}
+.product-well .fb ul li{
+    float: left;
+    margin-left: 20px;
+}
+/*.product-well-end*/
+
+/*news-头部*/
+.news{
+    width: 1349px;
+    height: 1594px;
+    background: url(../images/bottom-bj.jpg) no-repeat 50% 50%;
+    text-align: center;
+}
+.news .news-new .redline{
+    width: 54px;
+    height: 3px;
+    background: url(../images/redline.png) no-repeat;
+    margin-left: 615px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.news .news-new{
+    padding-top: 170px;
+}
+.news .news-new h2{
+    font-size: 30px;
+    color: #2b2b2b;
+    font-weight: normal;
+}
+.news .news-new .title{
+    font-size: 14px;
+    color:#666;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+.news .news-new .first-news{
+    margin-top: 80px;
+    margin-left: 500px;
+    font-size: 12px;
+    color: #666;
+}
+.news .news-new .first-news span{
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+.news .news-new .second-news{
+    margin-top: 80px;
+    margin-left: 200px;
+    font-size: 14px;
+    color: #666;
+}
+.news .news-new .second-news span{
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+.news .news-new .third-news{
+     margin-top: 80px;
+     margin-left: 80px;
+     font-size: 14px;
+     color: #666;
+ }
+.news .news-new .forth-news span{
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+.news .news-new .forth-news{
+    margin-top: 80px;
+    margin-left: -80px;
+    font-size: 14px;
+    color: #666;
+}
+.news .news-new .third-news span{
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+.news #call h2{
+    margin-top: 300px;
+}
+.news #call input{
+    width: 754px;
+    height: 35px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.news #call span{
+    font-size: 14px;
+    color: #666;
+}
+.news #call .btn{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+/*news-尾部*/
+/*footer-头部*/
+#footer{
+    width: 100%;
+    height: 251px;
+    background: #000;
+    text-align: center;
+
+}
+#footer h2{
+    padding-top: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+#footer .tab-b{
+    height: 12px;
+    margin-left: 502px;
+    margin-top: 23px;
+}
+#footer .tab-b li{
+    float: left;
+    margin-left: 10px;
+}
+#footer .tab-b li a{
+    font-size: 16px;
+    color: #666;
+}
+#footer .adress{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 420px;
+}
+#footer .adress li{
+    height: 30px;
+    font-size: 16px;
+    color: #666;
+    float: left;
+    margin-left: 20px;
+}
+#footer .adress .phone{
+    background: url(../images/phone.png) no-repeat left;
+    padding-left: 30px;
+}
+#footer .adress .message{
+    background: url(../images/message.png) no-repeat left;
+    padding-left: 30px;
+}
+#footer .adress .ad{
+    background: url(../images/adress.png) no-repeat left ;
+    padding-left: 30px;
+}
+#footer .line{
+    height: 10px;
+    margin-left: 51px;
+    margin-top: 24px;
+    background: url(../images/line.png) no-repeat 50% 50%;
+}
+/*footer-end*/
+
+
+
+
+
+
+
+

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en" >
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <div class="box">
+        <!--登录 注册 地址 -->
+        <div class="topheader wraper">
+            <ul id="welcome" class="fl">
+                <li style="font-size: 12px;">欢迎光临易果生鲜!</li>
+                <li class="goto_city clearFix">
+                    <div class="helpto fl">配送至:</div>
+                    <div class="tocity fl">
+                        <a href="javascript:;">你好<i></i></a>
+                    </div>
+                    <div id="city_list" class="city_list clearFix" ng-controller="myCity">
+                        <div class="address clearFix">
+                            <strong class="fl">请根据您的收货地址选择</strong>
+                            <a class="fr" href="javascript:;">全国其他城市>></a>
+                        </div>
+                        <div class="hotucity clearFix">
+                            <i></i>
+                            <b>热门城市</b>
+                            <a href="javascript:;">上海</a>
+                            <a href="javascript:;">北京</a>
+                            <a href="javascript:;">天津</a>
+                            <a href="javascript:;">南京市</a>
+                            <a href="javascript;;">苏州市</a>
+                            <a href="javascript:;">昆山市</a>
+                            <a href="javascript:;">无锡市</a>
+                            <a href="javascript:;">杭州市</a>
+                            <a href="javascript:;">宁波市</a>
+                        </div>
+                        <p class="letter clearFix">
+                            <span>ABCDE</span>
+                            <span>FGHIJ</span>
+                            <span>KLMNO</span>
+                            <span>PQIST</span>
+                            <span>UVWXYZ</span>
+                        </p>
+                        <div class="citycon clearFix" ng-repeat="city in citys">
+                            <dl>
+                                <dt>A</dt>
+                                <dd><a href="javascript:;">{{city}}</a></dd>
+                            </dl>
+                            <!--<dl>-->
+                                <!--<dt>B</dt>-->
+                                <!--<dd><a href="javascript:;">你好</a></dd>-->
+                            <!--</dl>-->
+                            <!--<dl>-->
+                                <!--<dt>C</dt>-->
+                                <!--<dd><a href="javascript:;">你好</a></dd>-->
+                            <!--</dl>-->
+                            <!--<dl>-->
+                                <!--<dt>D</dt>-->
+                                <!--<dd><a href="javascript:;">你好</a></dd>-->
+                            <!--</dl>-->
+                            <!--<dl>-->
+                                <!--<dt>E</dt>-->
+                                <!--<dd><a href="javascript:;">你好</a></dd>-->
+                            <!--</dl>-->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="fr" id="login">
+                <li><a href="login&register.html">[登录]</a></li>
+                <li><a href="login&register.html">[注册]</a></li>
+                <li class="myfruit"><a href="javascript"><i></i>我的易果</a><span></span></li>
+                <li class="appfruit"><a href="javascript"><i></i>手机易果</a><span></span></li>
+                <li class="card"><a href="javascript"><i></i>储值卡</a></li>
+                <li class="entrance"><a href="javascript"><i></i>提货券入口</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- search-->
+    <div class="all_search">
+        <div class="box_search wraper clearFix">
+            <div class="search_con fl">
+                <a href="javascript:;"><img src="images/logo-w13.png" alt=""/></a>
+            </div>
+            <div class="search fl">
+                <input type="text" placeholder=" 输入商品名/编号/拼音"/>
+                <span class="btn-sear fl">搜索</span>
+            </div>
+            <div class="car-sell fl">
+                <a href="javascript:;">
+                    <span class="car"><i>0</i></span>
+                    <b>0.0</b>
+                </a>
+                <div class="box-car">
+                    购物车里什么都没有，赶快选购吧!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner -->
+    <div class="banner">
+            <div class="f_banner clearFix">
+                <img src="images/banner.jpeg" alt=""/>
+                <img class="banner_top" src="images/banner_top.png" alt=""/>
+                <!--2 -->
+                <img class="banner3" src="images/banner3.jpeg" alt="">
+                <!--1-->
+                <img  class="banner5" src="images/banner5.jpeg" alt="">
+                <!--1-->
+                <img class="banner6" src="images/banner6.jpeg" alt="">
+                <!--2 -->
+                <img class="banner8" src="images/banner8.jpeg" alt="">
+                <!--1-->
+                <div class="wraper">
+                    <ul class="banner_nav">
+                        <li class="all_class">全部商品分类▼</li>
+                        <li  class="fruit"><i></i>进口水果</li>
+                        <li  class="cnfruit"><i></i>国产水果</li>
+                        <li><i></i>精选肉类</li>
+                        <li><i class="qldp"></i>禽类蛋品</li>
+                        <li><i class="fish"></i>海鲜水产</li>
+                        <li><i class="egg"></i>乳品糕点</li>
+                        <li><i class="vegetable"></i>新鲜蔬菜</li>
+                        <li><i class="fast"></i>方便速食</li>
+                        <li><i class="lyzh"></i>粮油杂货</li>
+                        <li><i class="yljs"></i>饮料酒水</li>
+                        <li><i class="gift"></i>礼品礼券</li>
+                    </ul>
+                </div>
+                <!--<span class="left_btn"></span>-->
+                <!--<span class="right_btn"></span>-->
+            </div>
+    </div>
+    <!-- -->
+    <div class="recomment wraper clearFix">
+        <ul class="clearFix">
+            <li>
+                <div class="ph_box">
+                    <a href="new_goods.html"><img src="images/commend_one.jpeg" alt=""/></a>
+                    <div class="inside">
+                        <p class="title">新品专区</p>
+                        <span class="assistant">探访源头产地 甄选当今实令</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ph_box">
+                    <a href="new_goods.html"><img src="images/commend_two.jpeg" alt=""/></a>
+                    <div class="inside">
+                        <p class="title">优质生活</p>
+                        <span class="assistant">美食有态度 生活更有趣</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ph_box">
+                    <a href="new_goods.html"><img src="images/commend_three.jpeg" alt=""/></a>
+                    <div class="inside">
+                        <p class="title">银行专享</p>
+                        <span class="assistant">银行卡专享 超值购实惠</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ph_box">
+                    <a href="new_goods.html"><img src="images/commend_four.jpeg" alt=""/></a>
+                    <div class="inside">
+                        <p class="title">菜谱专栏</p>
+                        <span class="assistant">大厨私房菜 餐桌新时尚</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--degital content -->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon"></span><b>进口水果</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">进口苹果</a></li>
+                    <li><a href="javascript:;">佳沛专区</a></li>
+                    <li><a href="javascript:;">泰国鲜果</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 详细的图片-->
+    <div class="degital_fruit wraper" ng-controller="foreign_fruit">
+        <div class="first_fruit clearFix" ng-repeat="ph in photos">
+            <div class="foreign_fruit_ph fl">
+                    <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" >
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                    <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+<!--国产水果 -->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon1"></span><b class="jcsg">进口水果</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--国产水果图片 -->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--新鲜蔬菜 -->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon2"></span><b class="xxsc">新鲜蔬菜</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--新鲜蔬菜图片 -->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 海鲜水产-->
+     <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">海鲜水产</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 海鲜水产图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 精选肉类-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">精选肉类</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 精选肉类图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 禽类蛋类-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">禽类蛋类</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 禽类蛋类图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 粮油杂货-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">粮油杂货</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 粮油杂货图片-->
+    <div class="degital_fruit wraper" ng-controller="foreign_fruit">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" >
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 乳品糕点-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">乳品糕点</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 乳品糕点图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 饮料酒水-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">乳品糕点</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 饮料酒水图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 方便速食-->
+    <div class="fruit_class wraper clearFix">
+        <div class="foreign_fruit clearFix">
+            <div class="foreign_title fl"><span class="icon3"></span><b class="xxsc">方便速食</b></div>
+            <div class="foreign_fruit_list fr">
+                <ul class="clearFix">
+                    <li><a href="javascript:;">果味四川</a></li>
+                    <li><a href="javascript:;">秋日梨享</a></li>
+                    <li><a href="javascript:;">甜蜜诱惑</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 方便速食图片-->
+    <div class="degital_fruit wraper">
+        <div class="first_fruit clearFix">
+            <div class="foreign_fruit_ph fl">
+                <img src="{{ph.ph_address.big}}" alt=""/>
+            </div>
+            <ul class="small_ph fl" ng-controller="foreign_fruit">
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+                <li><a href="javascript:;"><img src="{{ph.ph_address}}" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+<!--foot -->
+    <div class="foot_service">
+        <div class="intrduce_foot">
+           <div class="content_foot wraper clearFix">
+               <ul class="service_foot clearFix">
+                   <li>
+                           <div class="big_foot_character">全球精选</div>
+                           <i class="service_detail">一站式生鲜购物方案</i>
+                   </li>
+                   <li>
+                       <div class="big_foot_character">全球精选</div>
+                       <i class="service_detail">一站式生鲜购物方案</i>
+                   </li>
+                   <li>
+                       <div class="big_foot_character">全球精选</div>
+                       <i class="service_detail">一站式生鲜购物方案</i>
+                   </li>
+                   <li>
+                       <div class="big_foot_character">全球精选</div>
+                       <i class="service_detail">一站式生鲜购物方案</i>
+                   </li>
+               </ul>
+           </div>
+        </div>
+    </div>
+    <!--页尾 -->
+    <div class="footer">
+        <div class="wrap">
+            <dl class="col1">
+                <dt>新手指南</dt>
+                <dd>
+                    <p><a href="javascript:;">账户注册</a></p>
+                    <p><a href="javascript:;">购物流程</a></p>
+                    <p><a href="javascript:;">订购方式</a></p>
+                    <p><a href="javascript:;">悠币说明</a></p>
+                    <p><a href="javascript:;">会员等级<i class="ml5"><img src="http://img06.yiguoimg.com/e/web/170315/00941/154425/icon-new.png"></i></a></p>
+
+                </dd>
+            </dl>
+            <dl class="col2">
+                <dt>付款方式</dt>
+                <dd>
+                    <p><a href="javascript:;">支付方式</a>/<a href="javascript:;">发票说明</a></p>
+                    <p><a href="javascript:;">充值说明</a>/<a href="javascript:;">储值卡说明</a></p>
+                    <p><a href="javascript:;">优惠代码/礼品卡说明</a></p>
+                    <p><a href="javascript:;">卡券购买章程</a></p>
+                </dd>
+            </dl>
+            <dl class="col3">
+                <dt>配送方式</dt>
+                <dd>
+                    <p><a href="javascript:;">配送运费</a></p>
+                    <p><a href="javascript:;">配送范围</a></p>
+                    <p><a href="javascript:;">配送时间</a></p>
+                </dd>
+            </dl>
+            <dl class="col4">
+                <dt>售后服务</dt>
+                <dd>
+                    <p><a href="javascript:;">退换货政策</a></p>
+                    <p><a href="javascript:;">退换货流程</a></p>
+                    <p><a href="javascript:;">常见问题</a></p>
+                    <p><a href="javascript:;">极速退款</a><p>
+                    <p><a href="javascript:;">投诉与建议</a></p>
+                </dd>
+            </dl>
+            <dl class="col5">
+                <dt>关于我们</dt>
+                <dd>
+                    <p><a href="javascript:;">公司介绍</a></p>
+                    <p><a href="javascript:;">联系我们</a></p>
+                    <p><a href="javascript:;">业务合作</a></p>
+                    <p><a href="javascript:;">诚信举报</a></p>
+                    <p><a href="javascript:;" target="_blank" rel="nofollow">人才招聘</a></p>
+                    <p><a href="javascript:;">友情链接</a></p>
+
+                </dd>
+            </dl>
+            <div class="service"><span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span><span>周一至周日 9:00-21:00</span></div>
+            <div class="copyright">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p> <a href="javascript:;" target="_blank" rel="nofollow">沪ICP备09008015号 </a>  Copyright © 2005-2017 <a href="javascript:;">上海易果电子商务有限公司</a>版权所有</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

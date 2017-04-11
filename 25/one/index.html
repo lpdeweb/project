@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mod1">
+<head>
+    <meta charset="UTF-8">
+    <title>打造国产品牌，留下极致品质</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+</head>
+<body style="background:#eee;">
+<!--头部-->
+<div class="header" ng-controller="header">
+    <div class="wraper h_top clearFix">
+        <div class="top_l fl col-md-1">
+            <a href="javascript:;">
+                <img src="images/head_logo.png" alt="" />
+            </a>
+        </div>
+        <ul class="top_r fr col-md-7 col-md-offset-4 clearFix">
+            <li class="fl" ng-repeat="item in a">
+                <a href="javascript:;" >{{item}}</a>
+            </li>
+            <li class="fl">
+                <img src="images/head_search.jpg" alt="" />
+            </li>
+            <li class="fl">
+                <img src="images/head_buycar.jpg" alt="" />
+            </li>
+            <li class="fl">
+                <img src="images/head_login.jpg" alt="" />
+            </li>
+        </ul>
+    </div>
+</div>
+<!--banner-->
+<div class="banner" id="banner">
+    <div class="banner_star1 "></div>
+    <div class="banner_star2"></div>
+    <div class="banner_star3"></div>
+    <img src="images/70.jpg" alt="" class="on"/>
+    <img src="images/71.jpg" alt="" />
+    <img src="images/72.jpg" alt="" />
+</div>
+<!--content-->
+<div class="content_one">
+    <ul class="clearFix wraper">
+        <li class="fl">
+            <img src="images/31.jpg" alt="" />
+        </li>
+        <li class="fl">
+            <img src="images/32.jpg" alt="" />
+        </li>
+        <li class="fl">
+            <img src="images/33.jpg" alt="" />
+        </li>
+    </ul>
+</div>
+<div class="content_two wraper" ng-controller="contentTwo">
+    <div class="two_top clearFix">
+        <span class="fl left">热销手机</span>
+        <span class="fr right">更多商品 ></span>
+    </div>
+    <div class="two_content clearFix">
+        <a class="fl left col-md-3" href="javascript:;" ng-repeat="item in arr">
+            <img ng-src="images/{{item.img}}.jpg" alt="" />
+            <h2>{{item.title}}</h2>
+            <p>{{item.value}}</p>
+            <span>{{item.rmb|currency:'￥'}}<span>
+        </a>
+    </div>
+    
+</div>
+
+</body>
+<script>
+    let header=angular.module('mod1',[]);
+    header.controller('header',($scope)=>{
+        $scope.a=["酷派商城","Cool系列","全部商品","酷友社区","酷云"];
+    });
+    header.controller('contentTwo',($scope)=>{
+        $scope.arr=[{"img":34,"title":"Cool S1","value":"送价值999元AKG耳机","rmb":2599},{"img":35,"title":"Cool dual桀骜银","value":"双1300万摄像头","rmb":1099},
+            {"img":36,"title":"锋尚MAX玫瑰金","value":"4+32G大内存5.5寸弧面屏","rmb":2599},
+            {"img":37,"title":"锋尚mini智尚白","value":"炫耀双镜面","rmb":1199},]
+    })
+</script>
+</html>

@@ -1,0 +1,139 @@
+
+#about_banner{
+    width: 1364px;
+    height: 381px;
+    background: url(../images/about_banner.jpg) no-repeat 50% 50%;
+}
+#about_content {
+    width: 1168px;
+    height: 1088px;
+    background: url(../images/about_content.jpg) no-repeat 810px 80px ;
+}
+#about_content .content_left{
+    width: 1168px;
+    height: 1103px;
+}
+#about_content .content_left h2{
+    padding-top: 70px;
+    padding-left: 100px;
+}
+#about_content .content_left p{
+    padding-left: 100px;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 40px;
+    line-height: 20px;
+}
+#about_content .content_left article{
+    padding-left: 100px;
+    font-size: 12px;
+    color: #999;
+    margin-top: 120px;
+    line-height: 20px;
+}
+#about_content .content_left #Team{
+    padding-top: 60px;
+}
+#about_content .content_left #Team .Team_content{
+    font-size: 12px;
+    color: #999;
+}
+#about_content .content_left #Team ul{
+    width: 1160px;
+    height: 319px;
+    padding-left: 80px;
+    padding-top: 30px;
+
+}
+#about_content .content_left #Team ul li{
+    float: left;
+    overflow: hidden;
+    margin: 5px;
+    width: 374px;
+    height: 321px;
+
+}
+#about_content .content_left #Team ul li img{
+    width: 374px;
+    height: 321px;
+    transition:1s all ease;
+     /*margin: auto auto;*/
+}
+#about_content .content_left #Team ul li img:hover{
+    width: 424px;
+    height: 371px;
+    margin: -25px 0 0 -25px;
+}
+#about_p{
+    width: 1349px;
+    height: 746px;
+    background: url(../images/about_p.jpg) no-repeat 50% 50%;
+    position: relative;
+}
+#about_p ul{
+    position: absolute;
+    top:160px; right: 143px;
+}
+#about_p ul li{
+    font-size: 12px;
+    color: #fff;
+    margin: 30px 0;
+    line-height: 20px;
+}
+#about_footer{
+    width: 100%;
+    height: 251px;
+    background: #000;
+    text-align: center;
+
+}
+#about_footer h2{
+    padding-top: 30px;
+    font-size: 40px;
+    color: #fff;
+}
+#about_footer .tab-b{
+    height: 12px;
+    margin-left: 502px;
+    margin-top: 23px;
+}
+#about_footer .tab-b li{
+    float: left;
+    margin-left: 10px;
+}
+#about_footer .tab-b li a{
+    font-size: 16px;
+    color: #666;
+}
+#about_footer .adress{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 420px;
+}
+#about_footer .adress li{
+    height: 30px;
+    font-size: 16px;
+    color: #666;
+    float: left;
+    margin-left: 20px;
+}
+#about_footer .adress .phone{
+    background: url(../images/phone.png) no-repeat left;
+    padding-left: 30px;
+}
+#about_footer .adress .message{
+    background: url(../images/message.png) no-repeat left;
+    padding-left: 30px;
+}
+#about_footer .adress .ad{
+    background: url(../images/adress.png) no-repeat left ;
+    padding-left: 30px;
+}
+#about_footer .line{
+    height: 10px;
+    margin-left: 51px;
+    margin-top: 24px;
+    background: url(../images/line.png) no-repeat 50% 50%;
+}
+
+

@@ -1,0 +1,79 @@
+/* 结构所需 */
+.wraper {
+	width: 1541px;
+	position: relative;
+	margin-left: -192px;
+	background: url(../img/wrap_rp.jpeg);
+}
+.main {
+	background: url(../img/wrap_bg_news.jpeg) no-repeat right top;
+}
+.container {
+	width: 720px;
+}
+.spr-s {
+	display: block;
+	background: url(../img/spr_share.png) no-repeat;
+}
+
+/* 新闻中心 */
+.ns-title {
+	height: 67px;
+	margin-top: 21px;
+	border-bottom: 1px solid rgba(88,96,106,0.1);
+}
+.ns-title h3 {
+	font-size: 19px;
+	font-weight: normal;
+	color: #c25521;
+	height: 36px;
+	line-height: 36px;
+}
+.ns-title p {
+	font-size: 12px;
+	font-family: 'simsun';
+	color: #9aa2aa;
+	height: 20px;
+	line-height: 20px;
+}
+.ns-text {
+	font-size: 14px;
+	min-height: 915px;
+	padding: 30px 0;
+	color: #58606a;
+	line-height: 24px;
+}
+.ns-text a {
+	color: #c25521;
+}
+.ns-share {
+	height: 80px;
+	border-top: 1px dotted #3f424e;
+}
+.ns-share ul {
+	margin-top: 26px;
+	height: 27px;
+	line-height: 27px;
+	font-size: 12px;
+    color: #3f424e;
+}
+.ns-share ul li {
+	float: left;
+}
+.ns-share a i {
+	width: 16px;
+	height: 16px;
+	margin: 5px 2px;
+}
+.sh1 { background-position: 0 -128px; }
+.sh2 { background-position: 0 -16px; }
+.sh3 { background-position: 0 -64px; }
+.ns-share a .shp {
+	margin: 2px 2px;
+	width: 9px;
+	height: 9px;
+	padding: 6px;
+	border: 1px solid #dfe0e1;
+	border-radius: 4px;
+	background-position: -117px -523px;
+}

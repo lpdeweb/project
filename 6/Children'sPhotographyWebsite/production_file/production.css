@@ -1,0 +1,152 @@
+.series_b{
+	padding-top: 26px;
+	height: 96px;
+	margin-bottom: 20px;
+}
+.series_b div h2{
+	text-align: center;
+	font-size: 40px;
+	color: #d5d2bf;
+	padding-bottom: 16px;
+}
+.series_b div span{
+	display: block;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
+
+
+
+
+.parent_b{
+	display: flex;
+}
+.parent_b .parent_b_p{
+	flex: 1;
+	width: 331px;
+	float: left;
+	padding: 0 8px;
+}
+.parent_b .parent_b_p div{
+	position: relative;
+}
+.parent_b .parent_b_p p{
+	height: 35px;
+	background: #beaea7;
+	border-radius: 6px;
+	width: 321px;
+	margin-bottom: 10px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 10px;
+	border-bottom: 1px solid #000;
+}
+.parent_b .parent_b_p div ul{
+	flex: 1;
+	width: 331px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+.parent_b div ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.parent_b div ul li img{
+	width: 331px;
+	height: 250px;
+}
+.parent_b .parent_b_p div ol{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(0,0,0,.5);
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            text-align: center;
+}
+.parent_b .parent_b_p div ol li{
+	width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #B7B7B7;
+            display: inline-block;
+            cursor: pointer;
+}
+.parent_b .parent_b_p div ol li.active{
+            background: #F40;
+        }
+
+
+
+
+
+
+
+
+
+.mother_b{
+	display: flex;
+}
+.mother_b .mother_b_p{
+	flex: 1;
+	width: 246px;
+	float: left;
+	padding: 0 8px;
+}
+.mother_b .mother_b_p div{
+	position: relative;
+}
+.mother_b .mother_b_p p{
+	height: 35px;
+	background: #beaea7;
+	border-radius: 6px;
+	width: 236px;
+	margin-bottom: 10px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 10px;
+	border-bottom: 1px solid #000;
+}
+.mother_b .mother_b_p div ul{
+	flex: 1;
+	width: 246px;
+	height: 386px;
+	overflow: hidden;
+	position: relative;
+}
+.mother_b div ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mother_b div ul li img{
+	width: 246px;
+	height: 386px;
+}
+.mother_b .mother_b_p div ol{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(0,0,0,.5);
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            text-align: center;
+}
+.mother_b .mother_b_p div ol li{
+	width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #B7B7B7;
+            display: inline-block;
+            cursor: pointer;
+}
+.mother_b .mother_b_p div ol li.active{
+            background: #F40;
+        }

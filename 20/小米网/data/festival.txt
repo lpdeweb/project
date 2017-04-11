@@ -1,0 +1,5 @@
+[
+	{"img":"images/a4.jpg","cons":"光棍节想脱单吗？告白字体0元起","price":"6米币"},
+	{"img":"images/a4.jpg","cons":"光棍节想脱单吗？告白字体0元起","price":"6米币"},
+	{"img":"images/a4.jpg","cons":"光棍节想脱单吗？告白字体0元起","price":"6米币"}
+]

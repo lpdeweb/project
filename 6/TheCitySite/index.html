@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>绿城之都-南宁</title>
+
+<meta content="绿城之都-南宁" name="keywords">
+
+<meta content="绿城之都-南宁" name="description">
+
+<link href="index_files/base.css" rel="stylesheet" type="text/css">
+
+<link href="index_files/pagename.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="index_files/jquery-1.js"></script>
+
+<script type="text/javascript" src="index_files/jquery.js"></script>
+
+ <link href="css/index.css" rel="stylesheet" />
+
+ <link href="css/bace.css" rel="stylesheet" />
+
+</head>
+
+
+
+<body style="background: #ebf3ee;">
+
+
+
+<!--header开始--> 
+
+<div class="header"> 
+
+	<div class="w1000">
+
+    	<p>你好，欢迎光临绿城之都南宁！</p>
+
+	</div>
+
+</div>
+
+
+
+<div style="background: #fff;">
+
+<div class="w1000">
+
+	<div class="header_bottom">
+
+			<a href="index.html"><img src="index_files/logo.jpg" alt="" title="绿城之都-南宁" height="49" width="294"></a>
+
+       	<ul>
+
+                <li><a href="index.html">网站首页</a></li>
+
+                <li><a href="historic.html">历史</a></li>
+
+                <li><a href="beautiful.html">风景</a></li>
+
+                <li><a href="tourism.html">旅游</a></li>
+
+                <li><a href="delicacy.html">美食</a></li>
+
+                <li><a href="new.html">动态</a></li>
+
+	     <li><a href="about.html">团队介绍</a></li>
+
+                <span style="margin-left: 26px; font-size: 16px; color: red;">联系我们：0771-8888888</span>
+
+     	</ul>  
+
+    </div>
+
+</div>
+
+</div>
+
+        <style>
+                    .header_bottom ul li{
+                                transition:500ms all ease;
+                    }
+
+                    .header_bottom ul li:hover{
+
+                                transform:scale(2);
+
+                                            }
+
+            </style>
+
+
+
+
+
+
+
+
+
+<!--header结束--> 
+
+
+	<!--banner开始-->
+
+
+           <div class="baner clearFix">
+
+                <div id="box">
+                        <a href="javascript:;" id="left" id="box_left"><</a>
+                        <a href="javascript:;" id="right" id="box_right">></a>
+
+                        <ul id="ul1">
+                            <li><img src="images/0.jpg"></li>
+                            <li><img src="images/1.jpg"></li>
+                            <li><img src="images/2.jpg"></li>
+                            <li><img src="images/3.jpg"></li>
+                             <li><img src="images/4.jpg" height="344"></li>
+                        </ul>
+                         <ol id="ol1">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                </div>
+            </div>
+<script>
+    window.onload=function(){
+        var oBox=document.getElementById('box');
+        var aA1=oBox.getElementsByTagName('a')[0];
+        var aA2=oBox.getElementsByTagName('a')[1];
+        var oUl=document.getElementById('ul1');
+        var aImg=oUl.getElementsByTagName('img')[0];
+        var aImgs=oUl.getElementsByTagName('img');
+        var oOl=document.getElementById('ol1'); 
+        var aLi=oOl.getElementsByTagName('li');
+        var iNow=0;
+        var timer=null;
+        function tab(){
+              for(var i=0;i<aLi.length;i++){
+                        aLi[i].className='';
+                        aImg.src='images/'+i+'.jpg';
+                    }
+
+                    aLi[iNow].className='active';
+                    aImg.src='images/'+[iNow]+'.jpg';
+        }
+        for(var i=0;i<aLi.length;i++){
+                aLi[i].index=i;
+                aLi[i].onmouseover=function(){
+                        iNow=this.index;
+                        tab();
+                }
+        }
+        aA1.onclick=function(){
+            iNow--;
+            if(iNow<0){
+                    iNow=aLi.length-1;
+            }
+            tab();
+        }
+        function open(){
+
+            iNow++;
+            if(iNow==aLi.length){
+                    iNow=0;
+            }
+            tab();
+        }
+
+        aA2.onclick=open();
+        timer=setInterval(open,1000)
+
+        for(var i=0;i<aLi.length;i++){
+            aImgs[i].onmouseover=function(){
+                clearInterval(timer);
+            };
+            aImgs[i].onmouseout=function(){
+                timer=setInterval(open,1000);
+            };
+        }
+
+    }
+</script>
+
+
+
+	<!--banner结束--> 
+
+
+		<!--content开始-->
+
+		<div class="content"> 
+
+			<p class="p_tit1">走进南宁</p>	
+
+			<ul class="ul_jishu clearfix">
+
+            	<li class="fl">
+
+                	<a href="introduce.html"><img src="index_files/pic_1.jpg" alt="" title="" height="126" width="291" style="img:hover{transform:scale(2);}
+"></a>
+
+<p>
+                    	<a href="introduce.html">南宁简介</a>
+                    
+南宁，简称“邕”，是广西壮族自治区首府，全区政治、经济、交通、科教文卫、金融和信息中心，是中国面向东盟开放合作的前沿城市、中国—东盟博览会永久举
+办地、北部湾经济区核心城市、国家“一带一路”有机衔接的重要门户城市。   </p>
+
+                </li>
+
+            	<li class="fl ml20">
+
+                	<a href="Culture.html"><img src="index_files/pic_2.jpg" alt="" title="" height="126" width="291"></a>
+
+<p>
+                    	<a href="Culture.html">南宁文化</a>
+                        
+南宁别称绿城、凤凰城、五象城。旅游资源丰富，北连桂林，南接北海，构成了广西的黄金旅游带。壮丽的边关风采、浪漫的海滩风貌、迷人的异国情调，星罗棋布
+的灵山秀水，古朴悠远的古迹故址，山、水、人、情构成南宁多层次的旅游景观。
+                    </p>
+
+                </li>
+
+                <li class="fr">
+
+                	<a href="historic.html"><img src="index_files/pic_3.jpg" alt="" title="" height="126" width="291"></a>
+
+<p>
+                    	<a href="historic.html">南宁历史</a>
+                       
+南宁历史悠久，在古代，南宁属于百越领地。秦始皇统一岭南地区后，南宁属于桂林郡。西汉时期，汉武帝又将它置于玉林郡管辖。东晋大兴元年（公元318
+年），置大兴郡，以南宁为郡治所在地，南宁建制从此开始，至今已有1600多年。</p>
+
+                </li>
+
+            </ul>	
+
+
+            <style>
+                    .ul_jishu li{
+                         transition:0.3s all ease-out;
+
+                    }
+                    .ul_jishu li:hover{
+                            box-shadow: 10px 10px 5px #888888;
+                    }
+            </style>
+
+
+            <div class="feilei">
+
+            	<div class="fl1 fldiv">
+
+                	<a href="#"><img src="index_files/pic_4.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">人民公园</a></p>
+
+                </div>
+
+                <div class="fl2 fldiv">
+
+                	<a href="#"><img src="index_files/pic_5.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">南宁海底世界</a></p>
+
+                </div>
+
+                <div class="fl3 fldiv">
+
+                	<a href="#"><img src="index_files/pic_6.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">金花茶公园</a></p>
+
+                </div>
+
+                <div class="fl4 fldiv">
+
+                	<a href="#"><img src="index_files/pic_7.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">五象广场</a></p>
+
+                </div>
+
+                <div class="fl5 fldiv">
+
+                	<a href="#"><img src="index_files/pic_8.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">地王云顶</a></p>
+
+                </div>
+
+                <div class="fl6 fldiv">
+
+                	<a href="#"><img src="index_files/pic_9.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">南宁民歌湖游船</a></p>
+
+                </div>
+
+                <div class="fl7 fldiv">
+
+                	<a href="#"><img src="index_files/pic_10.jpg" alt="" title="" height="76" width="75"></a>
+
+                    <p><a href="#">名树博览园</a></p>
+
+                </div>
+
+            </div>
+
+            <style>
+                    .feilei img{
+                                transition:1s all ease;
+                    }
+
+                    .feilei img:hover{
+
+                                transform: rotate(360deg);
+                                transform:scale(2);
+                                transform:rotateZ(360deg);
+                                -moz-transform:rotate(360deg); /* Firefox 4 */
+                                -webkit-transform:rotate(360deg); /* Safari and Chrome */
+                                -o-transform:rotate(360deg); /* Opera */
+                                            }
+
+            </style>
+
+            <div class="zjfc">
+
+            	<p class="p_tit1">秀丽南宁</p>
+
+                <div class="picScroll-left">
+
+                    <div class="hd">
+
+                        <a class="next">&lt;</a>
+
+                        <a class="prev">&gt;</a>
+
+                    </div>
+
+                    <div class="bd">
+
+                        <div class="tempWrap" style="overflow:hidden; position:relative; width:956px"><ul style="width: 1434px; left: -478px; position: relative; overflow: hidden; padding: 0px; margin: 0px;" class="picList">
+
+
+
+
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a1.jpg" height="151" width="231"></div>
+
+                               
+
+                            </li>
+
+                                             
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a2.jpg" height="151" width="231"></div>
+
+                                
+
+                            </li>
+
+                                             
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a3.jpg" height="151" width="231"></div>
+
+                               
+
+                            </li>
+
+                                             
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a4.jpg" height="151" width="231"></div>
+
+                               
+
+                            </li>
+
+                                             
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a5.jpg" height="151" width="231"></div>
+
+                              
+
+                            </li>
+
+                                             
+
+                   <li style="float: left; width: 235px;">
+
+                                <div class="pic"><img src="index_files/a6.jpg" height="151" width="231"></div>
+
+                            
+
+                            </li>
+
+
+
+                        </ul></div>
+
+                    </div>
+
+                </div>
+
+        		<!--为秀丽南宁模块图片向左滚到--> 
+
+                <script type="text/javascript">
+
+                jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,trigger:"click"});
+
+                </script>
+			
+
+
+                	
+
+            </div>
+
+		</div>
+
+		<!--content 结束--> 
+
+</div>
+
+<!--footer开始-->
+
+<div class="footer"> 
+
+	<p><a href="index.html">首页</a> | <a href="historic.html">历史</a> | <a href="beautiful.html">风景</a> | <a href="tourism.html">旅游</a> | <a href="delicacy.html">美食</a> | <a href="new.html">动态</a></p>
+
+<p>Copyright © 2015－2016 All Rights Reserved 版权所有 XXXXXXXXXXXXXXXXXX</p>
+  <p>地址：XXXXXXXXXXXXXXXXXX </p>
+  
+</div>
+
+
+
+</body>
+
+
+
+
+</html>

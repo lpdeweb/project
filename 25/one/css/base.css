@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+author:xd
+time:2010.3.10;
+*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    display:block;
+}
+li{
+    list-style:none;
+}
+img{
+    display:block;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearFix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.clearFix{
+    zoom:1;
+}
+.wraper{
+    width:1146px;
+    margin:0 auto;
+}
+.banner{
+    width:1366px;
+    margin:0 auto;
+}
+

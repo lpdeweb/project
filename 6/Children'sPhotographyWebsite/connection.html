@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="爱儿美专业儿童摄影服务机构"/>
+	<title>爱儿美儿童摄影</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="connection_file/connection.css">
+	<script src="js/index.js"></script>
+	<script src="js/jquery.js"></script>
+
+
+</head>
+<body>
+	<div class="nav">
+	      <div class="nav_list wraper clearFix">
+		<a href="index.html"><img src="images/logo.jpg" alt="" title="爱儿美儿童摄影"  width="110" class="fl"></a>
+
+		<ul class="nav-menu clearFix unstyled">
+		    <li><a href="index.html" class="three-d"> Home<span class="three-d-box"><span class="front">首页</span><span class="back">首页</span></span> </a></li>
+		    <li><a href="about.html" class="three-d"> Services <span class="three-d-box"><span class="front">关于我们</span><span class="back">关于我们</span></span> </a></li>
+		    <li><a href="production.html" class="three-d"> Products <span class="three-d-box"><span class="front">作品欣赏</span><span class="back">作品欣赏</span></span> </a></li>
+		    <li><a href="subbranch.html" class="three-d"> Contact <span class="three-d-box"><span class="front">分店</span><span class="back">分店</span></span> </a></li>
+		    <li><a href="combo.html" class="three-d"> Blog <span class="three-d-box"><span class="front">套餐</span><span class="back">套餐</span></span></a>
+		    </li>
+		    <li><a href="connection.html" class="three-d  active"> Shop On-line <span class="three-d-box"><span class="front">联系我们</span><span class="back">联系我们</span></span> </a></li>
+		</ul>
+	      </div>
+	</div>
+
+	<div class="baner clearFix">
+
+                <div id="box">
+                        <a href="javascript:;" id="left" id="box_left"><</a>
+                        <a href="javascript:;" id="right" id="box_right">></a>
+
+                        <ul id="ul1">
+                            <li><img src="images/0.jpg" height="700"></li>
+                            <li><img src="images/1.jpg" height="700"></li>
+                            <li><img src="images/2.jpg" height="700"></li>
+                            <li><img src="images/3.jpg" height="700"></li>
+                            <li><img src="images/4.jpg" height="700"></li>
+                        </ul>
+                         <ol id="ol1">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                </div>
+            </div>
+
+
+
+	<div class="rim">
+		<div class="rim_b wraper">
+				<h2>WORKS PHOTO</h2>
+				<span>联系我们</span>
+		</div>
+	</div>
+
+
+
+	<div class="connecte">
+		<div class="connecte_b wraper clearFix">
+			<a href="javascript:;" class="fl"><img src="connection_file/images/photo.jpg" alt=""></a>
+			<div class="fr">
+				<p>
+					爱儿美儿童摄影是主营孕妈咪、新生儿、满月、百露、周岁、十岁等生日照、亲子照及婴儿三宝产品（胎毛笔、手脚印、脐带印章等）、宝贝生日宴会现场布置、商业现场布置为一体的专业儿童摄影服务机构。
+				</p><br/>
+					<h3>联系我们：</h3>
+					<b>爱儿美官方统一客服电话：400-900-7977</b>
+					<b>爱儿美儿童摄影总部联系电话:88113857，88151151</b><br/>
+					<h3>公司地址：</h3><b>北京市海淀区西四环北路137号院北爱儿美摄影创意园A座</b>
+					<b>客服电话：0515-84232555</b>
+					<b>24小时服务电话：15371235579</b>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_b wraper">
+			<a href="index.html">首页</a>|<a href="about.html">关于我们</a>|<a href="connection.html">联系我们</a><br/>
+			<p>@2016爱儿美儿童摄影</p>
+		</div>
+	</div>
+
+</body>
+
+<script>
+    window.onload=function(){
+        var oBox=document.getElementById('box');
+        var aA1=oBox.getElementsByTagName('a')[0];
+        var aA2=oBox.getElementsByTagName('a')[1];
+        var oUl1=document.getElementById('ul1');
+        var aImg=oUl1.getElementsByTagName('img')[0];
+        var aImgs=oUl1.getElementsByTagName('img');
+        var oOl=document.getElementById('ol1'); 
+        var aLi=oOl.getElementsByTagName('li');
+        var iNow=0;
+        var timer=null;
+        function tab(){
+              for(var i=0;i<aLi.length;i++){
+                        aLi[i].className='';
+                        aImg.src='images/'+i+'.jpg';
+                    }
+
+                    aLi[iNow].className='active';
+                    aImg.src='images/'+[iNow]+'.jpg';
+        }
+        for(var i=0;i<aLi.length;i++){
+                aLi[i].index=i;
+                aLi[i].onmouseover=function(){
+                        iNow=this.index;
+                        tab();
+                }
+        }
+        aA1.onclick=function(){
+            iNow--;
+            if(iNow<0){
+                    iNow=aLi.length-1;
+            }
+            tab();
+        }
+        function open(){
+
+            iNow++;
+            if(iNow==aLi.length){
+                    iNow=0;
+            }
+            tab();
+        }
+
+        aA2.onclick=open();
+        timer=setInterval(open,1000)
+
+        for(var i=0;i<aLi.length;i++){
+            aImgs[i].onmouseover=function(){
+                clearInterval(timer);
+            };
+            aImgs[i].onmouseout=function(){
+                timer=setInterval(open,1000);
+            };
+        }
+
+
+    }
+
+
+</script>
+
+
+</html>

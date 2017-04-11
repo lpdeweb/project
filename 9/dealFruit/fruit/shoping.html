@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+<div class="box">
+    <!--登录 注册 地址 -->
+    <div class="topheader wraper">
+        <ul id="welcome" class="fl">
+            <li style="font-size: 12px;">欢迎光临易果生鲜!</li>
+            <li class="goto_city clearFix">
+                <div class="helpto fl">配送至:</div>
+                <div class="tocity fl">
+                    <a href="javascript:;">你好<i></i></a>
+                </div>
+                <div id="city_list" class="city_list clearFix" ng-controller="myCity">
+                    <div class="address clearFix">
+                        <strong class="fl">请根据您的收货地址选择</strong>
+                        <a class="fr" href="javascript:;">全国其他城市>></a>
+                    </div>
+                    <div class="hotucity clearFix">
+                        <i></i>
+                        <b>热门城市</b>
+                        <a href="javascript:;">上海</a>
+                        <a href="javascript:;">北京</a>
+                        <a href="javascript:;">天津</a>
+                        <a href="javascript:;">南京市</a>
+                        <a href="javascript;;">苏州市</a>
+                        <a href="javascript:;">昆山市</a>
+                        <a href="javascript:;">无锡市</a>
+                        <a href="javascript:;">杭州市</a>
+                        <a href="javascript:;">宁波市</a>
+                    </div>
+                    <p class="letter clearFix">
+                        <span>ABCDE</span>
+                        <span>FGHIJ</span>
+                        <span>KLMNO</span>
+                        <span>PQIST</span>
+                        <span>UVWXYZ</span>
+                    </p>
+                    <div class="citycon clearFix" ng-repeat="city in citys">
+                        <dl>
+                            <dt>A</dt>
+                            <dd><a href="javascript:;">{{city}}</a></dd>
+                        </dl>
+                        <!--<dl>-->
+                        <!--<dt>B</dt>-->
+                        <!--<dd><a href="javascript:;">你好</a></dd>-->
+                        <!--</dl>-->
+                        <!--<dl>-->
+                        <!--<dt>C</dt>-->
+                        <!--<dd><a href="javascript:;">你好</a></dd>-->
+                        <!--</dl>-->
+                        <!--<dl>-->
+                        <!--<dt>D</dt>-->
+                        <!--<dd><a href="javascript:;">你好</a></dd>-->
+                        <!--</dl>-->
+                        <!--<dl>-->
+                        <!--<dt>E</dt>-->
+                        <!--<dd><a href="javascript:;">你好</a></dd>-->
+                        <!--</dl>-->
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="fr" id="login">
+            <li><a href="login&register.html">[登录]</a></li>
+            <li><a href="login&register.html">[注册]</a></li>
+            <li class="myfruit"><a href="javascript"><i></i>我的易果</a><span></span></li>
+            <li class="appfruit"><a href="javascript"><i></i>手机易果</a><span></span></li>
+            <li class="card"><a href="javascript"><i></i>储值卡</a></li>
+            <li class="entrance"><a href="javascript"><i></i>提货券入口</a></li>
+        </ul>
+    </div>
+    <!-- search-->
+    <div class="all_search">
+        <div class="box_search wraper clearFix">
+            <div class="search_con fl">
+                <a href="javascript:;"><img src="images/logo-w13.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,220 @@
+/* 结构所需 */
+.wraper {
+	width: 1541px;
+	position: relative;
+	margin-left: -192px;
+	background: url(../img/wrap_rp.jpeg);
+}
+.main {
+	background: url(../img/wrap_bg_down.jpeg) no-repeat right top;
+}
+
+/* 下载页雪碧图 */
+.spr-d {
+	display: block;
+	background: url(../img/spr_down.png) no-repeat;
+}
+.container {
+	width: 720px;
+}
+
+/* 下载中心 */
+.dl-info p {
+	float: left;
+	width: 33.33%;
+	height: 24px;
+	color: rgb(88,96,106);
+	font-size: 12px;
+	text-indent: 5px;
+	line-height: 24px;
+}
+.dl-info .md5 {
+	width: 100%;
+}
+.dl-info .md5 span {
+	color: rgb(194,85,33);
+}
+.dl-tool {
+	margin-top: 20px;
+}
+.dl-tool li {
+	float: left;
+	width: 50%;
+	height: 76px;
+}
+.dl-tool li a {
+	display: block;
+	margin-right: 10px;
+	height: 66px;
+	line-height: 66px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 4px;
+	position: relative;
+}
+.orange a {
+	background: rgb(194,85,33);
+	text-indent: 131px;
+}
+.orange a i {
+	position: absolute;
+	left: 91px;
+	top: 15px;
+	width: 40px;
+	height: 36px;
+}
+.tool1 { background-position: -43px -379px; }
+.tool2 { background-position: -43px -379px; }
+.tool3 { background-position: -43px -414px; }
+.tool4 { background-position: -43px -486px; }
+.dl-notice {
+	margin-top: 15px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #777986;
+}
+.dl-notice i {
+	width: 16px;
+	height: 16px;
+	background-position: 100% -529px;
+	margin-right: 5px;
+}
+.blue a {
+	background: #36313f;
+}
+.channel li a {
+	text-indent: 151px;
+}
+.channel li a i {
+	position: absolute;
+	top: 15px;
+	left: 130px;
+	width: 20px;
+	height: 36px;
+	background-position: -64px -544px;
+}
+.column table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: center;
+}
+.column th {
+	padding: 10px;
+	color: rgb(54, 49, 63);
+	background: rgb(235, 235, 235);
+	border: 1px solid rgb(214, 216, 218);
+}
+.column td {
+	padding: 10px;
+	color: rgb(139, 144, 150);
+	border: 1px solid rgb(214, 216, 218);
+}
+.column td a {
+	margin: 0 5px;
+	color: rgb(194, 85, 33);
+}
+.speed li {
+	padding: 0 0 20px 90px;
+	position: relative;
+}
+.speed li .sd {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 73px;
+	height: 76px;
+}
+.speed .qqmgr {
+	background-position: 0 0;
+}
+.speed .xysd {
+	background-position: 0 -724px;
+}
+.speed h5 {
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgb(74,69,82);
+}
+.speed p {
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgb(119,121,134);
+	padding-bottom: 5px;
+}
+.sd-link a {
+	float: left;
+	margin-right: 8px;
+	padding: 4px 15px 6px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgb(177,213,243);
+	border-radius: 3px;
+}
+.sd-link a i {
+	float: left;
+	width: 15px;
+	height: 18px;
+}
+.sd1 { background-position: -68px -581px; }
+.sd2 { background-position: -67px -608px; }
+.diver li {
+	float: left;
+	width: 25%;
+	position: relative;
+}
+.diver li .dv {
+	margin: 4px auto;
+	width: 73px;
+	height: 76px;
+}
+.dv1 { background-position: 0 -76px; }
+.dv2 { background-position: 0 -152px; }
+.dv3 {
+	margin: 0 auto;
+	width: 79px;
+	height: 80px;
+	background-position: 0 -228px;
+}
+.diver li p {
+	width: 90%;
+	text-align: center;
+	padding: 10px 5%;
+	line-height: 16px;
+	color: #58606a;
+	font-size: 12px;
+}
+.diver li a {
+	display: block;
+	margin: 0 10px;
+	padding: 4px 0 6px 48px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgb(177,213,243);
+	border-radius: 3px;
+}
+.diver li a i {
+	float: left;
+	width: 15px;
+	height: 18px;
+	background-position: -68px -581px;
+}
+.diver li a span {
+	color: #eb7841;
+}
+
+/* hover效果 */
+.orange a {
+	transition: .2s all ease;
+}
+.blue a {
+	transition: .2s all ease;
+}
+.orange a:hover {
+	background: #de6c27;
+}
+.blue a:hover {
+	background: #327e92;
+}

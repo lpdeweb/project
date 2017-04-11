@@ -1,0 +1,11 @@
+.content-bottom ul li{
+    margin-top: 50px;
+}
+.content-bottom ul li img{
+    opacity: 1;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+.content-bottom ul li img:hover{
+    opacity: 0.5;
+}

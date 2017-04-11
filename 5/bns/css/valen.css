@@ -1,0 +1,255 @@
+/* 通用版头 */
+.spr-v {
+	display: block;
+	background: url(../img/spr_pages.png) no-repeat;
+}
+
+.header {
+	position: relative;
+	z-index: 99;
+}
+.header h1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.header h1 a i {
+	width: 150px;
+	height: 104px;
+	background-position: 0 0;
+}
+.header .nav {
+	padding-left: 130px;
+	height: 48px;
+	background: url(../img/spr_pages.png) repeat-x 0 -104px;
+}
+.nav ul li {
+	float: left;
+	padding: 10px 0 0;
+}
+.nav ul li a {
+	display: block;
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 27px;
+	color: #fff;
+}
+.nav ul li .nav-bd {
+	height: 27px;
+	width: 2px;
+	background-position: -148px -154px;
+}
+.login {
+	position: relative;
+	right: 25px;
+	top: 8px;
+}
+.login .nav-lg {
+	width: 107px;
+	height: 32px;
+	background-position: 0 -218px;
+}
+.login a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 32px;
+	font-size: 12px;
+	color: #5b834e;
+	text-indent: 34px;
+}
+.login .nav-ps {
+	position: absolute;
+	top: 9px;
+	left: 70px;
+	width: 9px;
+	height: 13px;
+	background-position: 0 -154px;
+}
+
+/* 主要内容 */
+.container {
+	background: url(../img/v_bg.jpeg) no-repeat center 0 #fbe5ea;
+	position: relative;
+}
+.center {
+	width: 1000px;
+	height: 950px;
+	margin: 0 auto;
+	background: url(../img/v_ct.jpeg) no-repeat;
+	position: relative;
+}
+.center .mv {
+	position: absolute;
+	top: 107px;
+	right: 491px;
+	width: 78px;
+	height: 80px;
+	background: url(../img/v_pic_mv.png) no-repeat;
+}
+.center .col {
+	position: absolute;
+	top: 380px;
+	left: 36px;
+}
+.center .col a {
+	float: left;
+}
+.col .col1 {
+	background: url(../img/v_nav1.png) no-repeat;
+	width: 150px;
+	height: 423px;
+}
+.col .col2 {
+	background: url(../img/v_nav2.png) no-repeat;
+	width: 145px;
+	height: 374px;
+}
+.col .col3 {
+	background: url(../img/v_nav3.png) no-repeat;
+	width: 200px;
+	height: 432px;
+	margin-top: 30px;
+}
+.footer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+}
+.footer p {
+	text-align: center;
+	font-size: 12px;
+	color: #f29dbe;
+	line-height: 19px;
+}
+.footer p a {
+	color: #f29dbe;
+}
+
+/* 动态效果 */
+.mv {
+	animation: beat 2s ease-in-out infinite;
+}
+@keyframes beat {
+	0%{ transform: scale(1); }
+	50%{ transform: scale(0.8); }
+	100%{ transform: scale(1); }
+}
+.col1 {
+	animation: fadeUp 1s ease both;
+}
+.col1:hover {
+	background: url(../img/v_nav1_on.png) no-repeat;
+}
+.col2 {
+	animation: fadeUp 1s ease .4s both;
+}
+.col2:hover {
+	background: url(../img/v_nav2_on.png) no-repeat;
+}
+.col3 {
+	animation: fadeUp 1s ease .6s both;
+}
+.col3:hover {
+	background: url(../img/v_nav3_on.png) no-repeat;
+}
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeDown1 {
+	0% {
+	    transform: translate(0px,0px);
+	    opacity: 0;
+	}
+	20% {
+	    transform: translate(10px,30px);
+	    opacity: 1;
+	}
+	35% {
+	    transform: translate(20px,60px);
+	    opacity: 1;
+	}
+	50% {
+	    transform: translate(30px,100px);
+	    opacity: 1;
+	}
+	75% {
+	    transform: translate(40px,140px);
+	    opacity: 0.6;
+	}
+	100% {
+	    transform: translate(50px,180px);
+	    opacity: 0;
+	}
+}
+@keyframes fadeDown2 {
+	0% {
+	    transform: translate(0px,0px);
+	    opacity: 0;
+	}
+	20% {
+	    transform: translate(-10px,70px);
+	    opacity: 1;
+	}
+	35% {
+	    transform: translate(-15px,140px);
+	    opacity: 1;
+	}
+	50% {
+	    transform: translate(-20px,210px);
+	    opacity: 1;
+	}
+	65% {
+	    transform: translate(-30px,280px);
+	    opacity: 0.6;
+	}
+	80% {
+	    transform: translate(-40px,350px);
+	    opacity: 0.3;
+	}
+	100% {
+	    transform: translate(-50px,420px);
+	    opacity: 0;
+	}
+}
+@keyframes fadeDown3 {
+	0% {
+	    transform: translate(0px,0px);
+	    opacity: 0;
+	}
+	20% {
+	    transform: translate(-10px,100px);
+	    opacity: 1;
+	}
+	35% {
+	    transform: translate(-15px,180px);
+	    opacity: 1;
+	}
+	50% {
+	    transform: translate(-20px,260px);
+	    opacity: 1;
+	}
+	65% {
+	    transform: translate(-30px,380px);
+	    opacity: 0.6;
+	}
+	80% {
+	    transform: translate(-40px,420px);
+	    opacity: 0.3;
+	}
+	100% {
+	    transform: translate(-50px,500px);
+	    opacity: 0;
+	}
+}

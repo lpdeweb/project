@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/superfish.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+	<div id="fh5co-wrapper">
+	<div id="fh5co-page">
+	<div id="fh5co-header">
+		<header id="fh5co-header-section">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+					<h1 id="fh5co-logo"><a href="index.html">春光小城</a></h1>
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li><a class="active" href="index.html">家</a></li>
+							<li>
+								<a href="hotel.html" class="fh5co-sub-ddown">酒店</a>
+								<ul class="fh5co-sub-menu">
+								 	<li><a href="#">豪华酒店</a></li>
+								 	<li><a href="#">简约公寓</a></li>
+									<li>
+										<a href="#" class="fh5co-sub-ddown">主题酒店</a>
+										<ul class="fh5co-sub-menu">
+											<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">海底世界</a></li>
+											<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">hello kitty</a></li>
+											<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">白雪公主</a></li>
+											<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">向日葵</a></li>
+											<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">星空</a></li>
+											<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">花海</a></li>
+										</ul>
+									</li>
+									<li><a href="#">五星级酒店</a></li> 
+								</ul>
+							</li>
+							<li><a href="services.html">服务</a></li>
+							<li><a href="blog.html">博客</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+	</div>
+	<aside id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url(images/slider1.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>春光小城</span></p>
+		   						<h2>家庭外出最好的选择</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">现在预订</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/slider2.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>春光小城</span></p>
+		   						<h2>一个最好的地方来享受你的生活</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">现在预订</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/slider3.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>春光小城</span></p>
+		   						<h2>让您的假期舒适</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">现在预订</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</aside>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div id="availability">
+					<form action="#">
+
+						<div class="a-col">
+							<section>
+								<select class="cs-select cs-skin-border">
+									<option value="" disabled selected>选择酒店</option>
+									<option value="email">豪华酒店</option>
+									<option value="twitter">舒适酒店</option>
+									<option value="linkedin">五星级酒店</option>
+								</select>
+							</section>
+						</div>
+						<div class="a-col alternate">
+							<div class="input-field">
+								<label for="date-start">报到</label>
+								<input type="text" class="form-control" id="date-start" />
+							</div>
+						</div>
+						<div class="a-col alternate">
+							<div class="input-field">
+								<label for="date-end">查看</label>
+								<input type="text" class="form-control" id="date-end" />
+							</div>
+						</div>
+						<div class="a-col action">
+							<a href="#">
+								<span>检查</span>
+								可用性
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-counter-section" class="fh5co-counters">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="20356" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">用户访问</span>
+				</div>
+				<div class="col-md-3 text-center">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="15501" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">酒店</span>
+				</div>
+				<div class="col-md-3 text-center">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="8200" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">交易</span>
+				</div>
+				<div class="col-md-3 text-center">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="8763" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">评分 &amp; 评论</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="featured-hotel" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>特色酒店</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="feature-full-1col">
+					<div class="image" style="background-image: url(images/hotel_feture_1.jpg);">
+						<div class="descrip text-center">
+							<p><small>低至</small><span>$100/晚</span></p>
+						</div>
+					</div>
+					<div class="desc">
+						<h3>豪华酒店</h3>
+						<p>春光小城精品酒店的品牌创意源于法国诺曼底小镇GINGKO酒店低调的浪漫时尚及德国同名乐队纯净、质朴及抚慰心灵的乡村音乐元素。将“韵致江南”和“现代商务”融为一体，以高雅温馨却不失简约内敛的设计风格，将人文与自然完美融和。</p>
+						<p><a href="#" class="btn btn-primary btn-luxe-primary">现在预订<i class="ti-angle-right"></i></a></p>
+					</div>
+				</div>
+
+				<div class="feature-full-2col">
+					<div class="f-hotel">
+						<div class="image" style="background-image: url(images/hotel_feture_2.jpg);">
+							<div class="descrip text-center">
+								<p><small>低至</small><span>$99/晚</span></p>
+							</div>
+						</div>
+						<div class="desc">
+							<h3>宝来酒店</h3>
+							<p>春光小城精品酒店的品牌创意源于法国诺曼底小镇GINGKO酒店低调的浪漫时尚及德国同名乐队纯净、质朴及抚慰心灵的乡村音乐元素，以高雅温馨却不失简约内敛的设计风格，将人文与自然完美融和。</p>
+							<p><a href="#" class="btn btn-primary btn-luxe-primary">现在预订<i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+					<div class="f-hotel">
+						<div class="image" style="background-image: url(images/hotel_feture_3.jpg);">
+							<div class="descrip text-center">
+								<p><small>低至</small><span>$99/晚</span></p>
+							</div>
+						</div>
+						<div class="desc">
+							<h3>主题酒店</h3>
+							<p>春光小城精品酒店的品牌创意源于法国诺曼底小镇GINGKO酒店低调的浪漫时尚及德国同名乐队纯净、质朴及抚慰心灵的乡村音乐元素，以高雅温馨却不失简约内敛的设计风格，将人文与自然完美融和。 </p>
+							<p><a href="#" class="btn btn-primary btn-luxe-primary">现在预订<i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="hotel-facilities">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>酒店设施</h2>
+					</div>
+				</div>
+			</div>
+
+			<div id="tabs">
+				<nav class="tabs-nav">
+					<a href="#" class="active" data-tab="tab1">
+						<i class="flaticon-restaurant icon"></i>
+						<span>餐厅</span>
+					</a>
+					<a href="#" data-tab="tab2">
+						<i class="flaticon-cup icon"></i>
+						<span>酒吧</span>
+					</a>
+					<a href="#" data-tab="tab3">
+
+						<i class="flaticon-car icon"></i>
+						<span>接机</span>
+					</a>
+					<a href="#" data-tab="tab4">
+
+						<i class="flaticon-swimming icon"></i>
+						<span>游泳池</span>
+					</a>
+					<a href="#" data-tab="tab5">
+
+						<i class="flaticon-massage icon"></i>
+						<span>温泉</span>
+					</a>
+					<a href="#" data-tab="tab6">
+
+						<i class="flaticon-bicycle icon"></i>
+						<span>健身房</span>
+					</a>
+				</nav>
+				<div class="tab-content-container">
+					<div class="tab-content active show" data-tab-content="tab1">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_1.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">餐厅</h3>
+									<p> 艾克西餐厅</p>
+									<p>喧嚣浮躁的城市生活裹挟我们一路快跑，你累了，稍微停一下，来这里开一瓶红酒，榨一杯果汁，点几样心仪的美食，与家人享受一个温馨的中午，与好友消磨一段慵懒的午后时光，当然，还可以在班得瑞如梦幻般私语的琴声中与另一半共度一个浪漫的晚上。享受调酒师为您挑选的红酒，上等食材精心烹制的健康美食，体验普罗旺斯的风情文化，让身体放松，让心灵小憩，也许你会突然间明白：什么对你来说更重要……</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab2">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_2.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">酒吧</h3>
+									<p>蛋壳屋音乐吧</p>
+									<p>音乐”之有理：以音乐为主的酒吧，主要以老外及热爱音乐的顾客居多。蛋壳屋是融商业和艺术为一体的酒吧，几十平米的场子，全是散台和卡座，舞台在前方，一次性只可容纳80多人。营业时间从晚8点开始，一直到凌晨2点，平安夜会稍有延长，整体消费会比平时稍高一点。</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab3">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_3.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">接机</h3>
+									<p>可随时打电话到酒店前台预订服务</p>
+									<p>可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务可随时打电话到酒店前台预订服务</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab4">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_4.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">游泳池</h3>
+									<p>奥龙堡游泳俱乐部</p>
+									<p>奥龙堡也是标准的室内泳池，循环过滤，冬天24小时恒温，水温26℃－28℃之间。为了保持泳池干净，特别要求泳客戴泳帽。这里每张年卡2690元，除游泳外，可享受奥龙堡其他设施，如桑拿、健身等，并馈赠价值1200元的游泳券、健身券、球券和培训课程。</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab5">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_5.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">温泉</h3>
+									<p>小汤温泉</p>
+									<p>小汤温泉水温常年保持在70℃左右。经专家测定，泉水的矿化度高，浮力大，对人体作用力强，而且含有丰富的矿物质，并含有大量阳离子、阴离子和硫化氢、二氧化碳等气体。用此水沐浴，对人体可起到良好的保健作用，对风湿病、关节炎及皮肤病有很好的治疗作用。因此很久以前，小汤温泉就是当地人在此沐浴的天然温水浴池。</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab6">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/tab_img_6.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">世界级</span>
+									<h3 class="heading">健身房</h3>
+									<p>奥龙堡运动俱乐部</p>
+									<p>金港先进的健身器械，100平方米的宽敞操厅，细腻周到的托幼室，幽雅的休闲吧，为你营造出一个完美的健身娱乐空间。</p>
+									<p class="service-hour">
+										<span>营业时间</span>
+										<strong>7:30 AM - 8:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>我们的顾客说</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="testimony">
+						<blockquote>
+							“位于市中心繁华地段，逛街、吃饭、娱乐都很方便。我们被免费升级到高级套房的，非常感谢“
+						</blockquote>
+						<p class="author"><cite>爱丽丝</cite></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="testimony">
+						<blockquote>
+							“我和我的妻子有一个愉快的周末脱身这里，工作人员非常友好，周到。强烈推荐“
+						</blockquote>
+						<p class="author"><cite>罗布·史密斯</cite></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="testimony">
+						<blockquote>
+							“我和我的妻子有一个愉快的周末脱身这里，工作人员非常友好，周到。强烈推荐“
+						</blockquote>
+						<p class="author"><cite>杰克</cite></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-blog-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>我们的博客</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="blog-grid" style="background-image: url(images/image-1.jpg);">
+						<div class="date text-center">
+							<span>09</span>
+							<small>8月</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">最昂贵的酒店</a></h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="blog-grid" style="background-image: url(images/image-2.jpg);">
+						<div class="date text-center">
+							<span>09</span>
+							<small>8月</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">酒店一周年庆</a></h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="blog-grid" style="background-image: url(images/image-3.jpg);">
+						<div class="date text-center">
+							<span>09</span>
+							<small>8月</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">探索新冒险</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="copyright">
+						<p><small>&copy; 春光小城 All Rights Reserved. <br>
+						<a href="http://www.chunguangxiaocheng.com/" >春光小城官网：http://www.chunguangxiaocheng.com</a> <br> 服务电话: <a href="#" target="_blank">400-001-123</a></small></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>公司</h3>
+							<ul class="link">
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">酒店</a></li>
+								<li><a href="#">客户服务</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>我们的设施</h3>
+							<ul class="link">
+								<li><a href="#">餐厅</a></li>
+								<li><a href="#">酒吧</a></li>
+								<li><a href="#">接机</a></li>
+								<li><a href="#">游泳池</a></li>
+								<li><a href="#">温泉</a></li>
+								<li><a href="#">健身房</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h3>订阅</h3>
+							<p>可以给我们提供更好的建议 </p>
+							<form action="#" id="form-subscribe">
+								<div class="form-field">
+									<input type="email" placeholder="邮件" id="email">
+									<input type="submit" id="submit" value="发送">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<ul class="social-icons">
+						<li>
+							<a href="#"><i class="icon-twitter-with-circle"></i></a>
+							<a href="#"><i class="icon-facebook-with-circle"></i></a>
+							<a href="#"><i class="icon-instagram-with-circle"></i></a>
+							<a href="#"><i class="icon-linkedin-with-circle"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

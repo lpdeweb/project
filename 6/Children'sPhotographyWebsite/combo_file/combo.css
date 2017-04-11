@@ -1,0 +1,89 @@
+.rim_b{
+	padding-top: 26px;
+	margin-bottom: 20px;
+}
+.rim_b h2{
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	padding-bottom: 16px;
+}
+
+
+.environment_b ul{
+	overflow: hidden;
+	width: 1031px;
+	margin-bottom: 8px;
+}
+.environment_b ul li{
+	float: left;
+	width: 333px;
+	margin-right: 8px;
+	overflow: hidden;
+	position: relative;
+}
+.environment_b ul li p{
+	float: right;
+	padding-right: 5px;
+	font-size: 16px;
+	color: #666;
+}
+.environment_b ul li p span{
+	font-size: 24px;
+	color: #dd0949;
+}
+.environment_b ul li img{
+	width: 333px;
+	height: 175.22px;
+}
+.environment_b ul li a{
+	transform-style: preserve-3d;
+}
+.environment_b ul li a img{
+	transition: .7s all ease-in;
+}
+.environment_b ul li a img:hover{
+	transform: perspective(800px) rotateZ(-3deg) scale(1.1,1.1);
+}
+.environment_b ul li .font{
+	width: 100px;
+	position: absolute;
+	left: -100px;
+	bottom: 0px;
+	background: rgba(231,13,79,0.8);
+	transition: .7s all ease;
+}
+.environment_b ul li .font h4{
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	font-weight: normal;
+}
+.environment_b ul li:hover .font{
+	transform: translateX(100px);
+}
+
+
+
+.more_b{
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.more_b a{
+	display: block;
+	width: 146px;
+	height: 26px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	line-height: 26px;
+	border: 1px solid #84827f;
+	margin: 0 auto;
+	border-radius: 6px;
+}
+.more_b a:hover {
+    background: #84827f;
+    color: #fff;
+}

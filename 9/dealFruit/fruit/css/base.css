@@ -1,0 +1,16 @@
+*{margin:0px; padding:0px;}
+a{text-decoration:none;}
+img{display: block;}
+.fl{float: left;}
+.fr{float:right;}
+li{list-style: none;}
+.wraper{width: 1200px; margin: 0 auto;}
+.clearFix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.clearFix{zoom:1;}
+.libg{background: #5aaa16;}
+body{background: #f7f8f8;}
+

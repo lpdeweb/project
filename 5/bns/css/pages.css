@@ -1,0 +1,90 @@
+/* 主要内容格式 */
+.container {
+	padding: 242px 0 0 37px;
+}
+
+/* 内容栏目间隔 */
+.column {
+	padding-bottom: 20px;
+}
+
+/* 内容标题格式 */
+.title {
+	height: 104px;
+	border-bottom: 3px solid #36313f;
+}
+.title h2 {
+	height: 64px;
+	line-height: 64px;
+	color: #3f3f51;
+	font-size: 42px;
+	font-weight: normal;
+}
+.title h2 b {
+	opacity: 0.2;
+	margin-left: 12px;	
+	font-weight: normal;
+}
+.title p {
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: 'simsun';
+}
+.title p a {
+	float: left;
+	height: 100%;
+	color: #3f424e;
+}
+.title p span {
+	float: left;
+	height: 100%;
+}
+.tit-home {
+	float: left;
+	width: 9px;
+	height: 9px;
+	background: url(../img/home_icon.png) no-repeat;
+	margin: 5px 6px 0 0;
+}
+.tit-now {
+	font-weight: bold;
+}
+
+/* 栏目标题格式 */
+.subtitle {
+	padding: 35px 0 9px 0;
+	margin-bottom: 12px;
+	border-bottom: 1px solid rgba(88,96,106,0.2);
+}
+.subtitle h4 {
+	border-left: 8px solid #484450;
+	font-size: 19px;
+	line-height: 22px;
+	text-indent: 8px;
+	color: #c25521;
+}
+
+/* 关于剑灵 */
+.about {
+	height: 265px;
+	border-top: 3px solid #36313f;
+	background: url(../img/about_bg.png) no-repeat right bottom;
+}
+.about h3 {
+	height: 38px;
+	line-height: 38px;
+	font-size: 21px;
+	margin-top: 60px;
+	color: #080706;
+}
+.about p {
+	font-size: 12px;
+	line-height: 1.5;
+	color: #8b877e;
+	line-height: 24px;
+	width: 450px;
+}
+.about p b {
+	color: #64583c;
+}

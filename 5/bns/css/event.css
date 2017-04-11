@@ -1,0 +1,95 @@
+/* 结构所需 */
+.wraper {
+	width: 1541px;
+	position: relative;
+	margin-left: -192px;
+	background: url(../img/wrap_rp.jpeg);
+}
+.main {
+	background: url(../img/wrap_bg_version.jpeg) no-repeat right top;
+}
+.container {
+	width: 700px;
+}
+
+/* 版本中心 */
+.title {
+	height: 130px;
+}
+.title ol {
+	margin-top: 10px;
+	background: url(../img/vline_icon.png) no-repeat left;
+}
+.title ol li {
+	float: left;
+	background: url(../img/vline_icon.png) no-repeat right;
+	width: 16.66%;
+	height: 25px;
+	line-height: 25px;
+	color: #333b48;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+.title ol .active {
+	color: #e73012;
+}
+.column ul {
+	margin: 35px 0 50px -16px;
+}
+.column ul li {
+	float: left;
+	width: 192px;
+	height: 304px;
+	background: #fff;
+	margin: 0 0 16px 16px;
+}
+.column ul li a {
+	position: relative;
+	height: 144px;
+	overflow: hidden;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.tria {
+	position: absolute;
+	bottom: 0;
+	left: 28px;
+	width: 15px;
+	height: 7px;
+	background: url(../img/arrow_icon.png) no-repeat;
+}
+.et-info {
+	height: 159px;
+	border: 1px solid #e3e6ed;
+	border-top: 0;
+	padding: 0 16px;
+	color: #545758;
+	font-size: 12px;
+}
+.et-ctd {
+	height: 45px;
+	line-height: 45px;
+}
+.et-ctd i {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 14px 4px 0 0;
+	background: url(../img/time_icon.png) no-repeat;
+}
+.et-info h3 {
+	color: #c25521;
+	height: 24px;
+	line-height: 24px;
+	border-bottom: 1px dotted #c0cfcf;
+	margin-bottom: 5px;
+}
+.et-info p {
+	line-height: 18px;
+}
+.et-time {
+	height: 36px;
+	line-height: 36px;
+	color: #b6b7b7;
+}
